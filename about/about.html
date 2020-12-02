@@ -1,0 +1,191 @@
+ <!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <title>About Us</title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="css/style.css">
+     </head>
+     <style>
+       .section_title{} .section_subtitle{
+         margin-bottom: 7px;
+         padding-left: 7px;
+         line-height: 1;
+         text-transform: uppercase;
+         color: rgb(16,24,32);
+         border-left: 3px solid rgb(254,231,21);
+         font-size: 700;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+       }
+       .section_main_title{
+         margin-top: 0;
+         margin-bottom: 37px;
+         font-size: 30px;
+         line-height: 1.27;
+         font-weight: 300;
+       }
+       .section_main_title strong{
+         font-weight: 600;
+       }
+       .about-box{
+         -webkit-box-shadow: 0 0 0 10px #000000 inset;
+         box-shadow: 0 0 0 10px #000000 inset;
+         margin-right: 0;
+         margin-top: 0;
+         position: relative;
+         display: block;
+       }
+       .box-overlay{
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 100%;
+         width: 100%;
+         background-color: rgb(16,24,32);
+         opacity: 0.5;
+         z-index: 3;
+         transform: translateY(30px) translateX(-30px); 
+         transform: translateY(30px) translateX(-30px);
+         -webkit-transform: translateY(30px) translateX(-30px);
+       }
+       .about-box .videopopup img {
+        transform: translateY(30px) translateX(-30px);
+         -webkit-transform: translateY(30px) translateX(-30px);
+         width:100%;
+         z-index: 1;
+
+       }
+       .about-box .videopopup{
+         position: relative;
+       }
+       .sonar-wrapper{
+         position: absolute;
+         z-index: 9;
+         top: 50%;
+         left: 50%;
+         margin-left: -40px;
+         margin-top: 20px;
+       }
+       .sonar-emitter{
+         position: relative;
+         margin: 0px auto;
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         background-color: #b7a67a;
+         text-align: center;
+       }
+       .sonar-emitter i{
+         z-index: 10;
+         font-size: 20px;
+         color: white;
+         margin-left: 4px;
+         line-height: 32px;       }
+
+         .sonar-wave{
+           position: absolute;
+           top:0;
+           left:0;
+           width:100%;
+           border-radius: 9999px;
+           background-color: #bfa67a;
+           opacity: 0;
+           z-index: -1;
+           pointer-events: none;
+         }
+         .sonar-wave{
+           animation: sonarWave 2s linear infinite;
+         }
+          @keyframes sonarWave{
+            from{
+              opacity: 0.4;
+            }
+            to{
+              transform: scale(3);
+              opacity: 0;
+            }
+          }
+     </style>
+     <body>
+         <!--Navbar-->
+         <div class="container" style="width:100%;">
+            <div class="logo">
+              <img src="images/1601433923819.jpg" alt="" height="70" width="110">
+            </div>
+            <nav>
+                <ul style="color: white;">
+                   <li><em>Home</em></li>
+                   <li><em>About</em></li>
+                   <li><em>Services</em></li>
+                   
+                   <li><em>Contact</em></li>
+
+                </ul>
+            </nav>
+         </div>
+         
+         <!--First Section-->
+        <section id="about" class="section-padding about-section">
+          <div class="containerr">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="section_title"><br>
+                <div class="section_subtitle" style="color: rgb(254,231,21);font-size: 1.9em;">About Us</div>
+                <h2 class="section_main_title">WE ARE <strong>CREATIVE</strong></h2>
+
+              </div>
+              
+              <div class="about-item">
+                <p>
+                  We are Dedicated to literate the societies.
+                  We at IVentors Initiatives are here to help you to shape your future with us.
+                  Our special Membership plans allow the students to master their favourite skills and courses from the top faculties around the globe in just Rs. 70/-
+                  Not only this, we are equally concern about our young curious aspirants, therefore we also prepare students of class 9th-12th for their entrance   examinations. All are welcome to register with us.
+                </p>
+                <p>
+                  World's Most Trusted Students Community. Join us for Jobs, Courses, Internships, Counselling, StudyAbroad and much more
+                </p>
+                <div class="hgt-20"></div>
+                <div class="home-button"><br>
+                  <a href="" class="btn-color-background" style="color: rgb(254,231,21);">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2">
+              <div class="about-box">
+                <div class="box-overlay"></div>
+                <a href="www.youtube.com" class="videopopup">
+                  <img src="images/pexels-max-fischer-5212343.jpg" alt="">
+                  <span class="sonar-wrapper">
+                    <span class="sonar-emitter">
+                      <i class="fa fa-play"></i>
+
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+              
+          
+          
+
+     </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+ 
