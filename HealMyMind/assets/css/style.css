@@ -36,6 +36,19 @@ h1, h2, h3, h4, h5, h6 {
   padding: 16px;
   text-decoration: none;
 }
+
+.aupper {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+.twittera {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
  
 /*.sidebar a.active {
   background-color: #FEE715FF;
@@ -59,15 +72,39 @@ div.content {
     height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
+  .sidebar a {
+    text-align: center;
+    float: left;
+    padding: 9px;
+    padding-left: 40px;
+  }
+   #aupper {
+    text-align: center;
+    float: left;
+    padding: 30px;
+    padding-left: 60px;
+    padding-bottom: 15px;
+  }
+   #twittera{ padding-left: 90px; }
   div.content {margin-left: 0;}
 }
 
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
-    float: none;
+    float: left;
+    padding: 9px;
+    padding-left: 40px;
   }
+  #twittera{ padding-left: 70px; }
+  #aupper {
+    text-align: center;
+    float: left;
+    padding: 30px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+  }
+
 }
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
