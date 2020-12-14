@@ -82,19 +82,67 @@ label
     
     outline-style: none
 }
-a .social-icon {
-    margin: 20px 50px 10px 50px;
-    text-decoration: none;
-    color:#102820ff ;
+.social-links ul
+{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
     
-  }
-  a .social-icon:hover
-  {
-      color:#fee715ff ;
-  }
-  
+   
+}
+.social-links ul li
+{
+    list-style: none;
+    margin: 0 15px;
+   
+}
 
-  @media  (max-width: 600px)
+.social-links ul li .social-icon{
+    font-size: 30px;
+    line-height: 60px;
+    transition: 0.6s;
+    color: black;
+    margin-top: 13px; 
+   
+}
+.social-links ul li .social-icon:hover
+{
+    color: yellow;
+}
+.social-links ul li  a{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    background-color:#fee715ff;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+.social-links ul li a:hover
+{
+    transform: translate(0,-10px);
+
+}
+.social-links ul li:nth-child(1) a:hover
+{
+    background-color: #25D366;
+}
+.social-links ul li:nth-child(2) a:hover
+{
+    background-color:  #c25ba1;
+}
+.social-links ul li:nth-child(3) a:hover
+{
+    background-color: #00acee;
+}
+.social-links ul li:nth-child(4) a:hover
+{
+    background-color: #0e76a8;
+}
+
+@media  (max-width: 600px)
   {
       body 
       {
@@ -117,12 +165,5 @@ a .social-icon {
           padding-bottom: 10px;
           font-size: 16px;
       }
-      .social-links
-      {
-        text-align: start;
-      }
-     .logo
-     {
-         display: none;
-     }
+      
   }
