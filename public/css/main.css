@@ -2330,14 +2330,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: rgb(255, 255, 255);
   font-family: 'poppins', sans-serif;
   font-size: 70px;
-  font-weight: 100;
+  /* font-weight: 100; */
   line-height: 1em;
   
 }
 .banner-content h3 {
   color: rgb(255, 255, 255);
   font-family: 'poppins', sans-serif;
-  font-weight: 10;
+  /* font-weight: 10; */
   word-spacing: 3px;
   
 }
