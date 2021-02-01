@@ -14,7 +14,7 @@ const SectionFour = () => {
       </div>
 
       <div class="col-lg-6 col-md-6 col-sm-6">
-        <img class="img-2 mx-auto d-block" src="./Assets/church-of-the-king-j9jZSqfH5YI-unsplash.jpg" alt=""
+        <img class="img-2 mx-auto d-block" src="/Assets/church-of-the-king-j9jZSqfH5YI-unsplash.jpg" alt=""
           srcset="" />
         <h1 class="big-heading mx-auto">
           Join our Initiative called as HealMyMind
