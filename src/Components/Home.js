@@ -1,87 +1,10 @@
 import React from "react";
 import Header from "./Header";
-import { makeStyles } from '@material-ui/core/styles';
-
 import svg1 from "./images/mobileBoy.svg";
 import svg2 from "./images/bird.svg";
 
-import { red } from '@material-ui/core/colors';
-import { createMuiTheme } from '@material-ui/core/styles';
-import yellow from '@material-ui/core/colors/purple';
-
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: yellow.A400,
-    },
-    secondary: {
-      main: '#f44336',
-    },
-  },
-});
-
-const useStyles = makeStyles((theme)=>({
-  root2: {
-    flexGrow: 1,
-    minwidth: 500,
-    marginBottom:50,
-  },
-  paper: {
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    minwidth:500,
-    padding: "10px",
-    fontSize: 20,
-  },
-  root: {
-    minWidth: 275,
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
-  title: {
-    fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
-  },
-  root3: {
-    maxWidth: 345,
-    marginBottom:30,
-  },
-  largeIcon:{
-     
-      '& svg': {
-        fontSize: 60,
-        justifyContent: "center"
-      }
-    
-  },
-  media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
-  },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: 'rotate(180deg)',
-  },
-  avatar: {
-    backgroundColor: red[500],
-  },
-}));
 
 const Home = () => {
-  const classes = useStyles();
   
   return (
     <div>
