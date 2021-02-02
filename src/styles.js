@@ -1,0 +1,168 @@
+import styled from "styled-components";
+
+//Introduciton Section
+
+export const Intro = styled.div`
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+`;
+
+export const Cards = styled.div`
+  width: 90%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  margin-top: 10rem;
+  padding: 0rem 2rem;
+
+  .arrow {
+    margin: 3rem 0rem;
+  }
+
+  color: #4e5de1;
+  letter-spacing: 5px;
+  -webkit-letter-spacing: 5px;
+  font-weight: 400;
+  font-size: 2rem;
+  .card-desc {
+    padding: 1rem 0rem;
+    margin: 2rem 0rem;
+  }
+  .short-desc {
+    font-size: 1.2rem;
+    color: #999;
+  }
+  .icon img {
+    border-radius: 12px;
+    box-shadow: -5px 15px 30px 0px rgba(0, 0, 0, 0.25);
+    animation: anime 0.75s infinite linear alternate 0.1s;
+
+    @keyframes anime {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-10px);
+      }
+    }
+  }
+  .second {
+    animation: anime 0.75s infinite linear alternate 0.2s;
+  }
+  .third {
+    animation: anime 0.75s infinite linear alternate 0.3s;
+  }
+`;
+
+export const ArlCard = styled.div`
+  padding: 0rem 2rem;
+  margin: 0 1rem;
+  /* min-height: 50vh; */
+  text-align: center;
+`;
+export const EepCard = styled.div`
+  padding: 0rem 2rem;
+  margin: 0 1rem;
+  min-height: 50vh;
+  text-align: center;
+`;
+export const DoubtsCard = styled.div`
+  padding: 0rem 2rem;
+  margin: 0 1rem;
+  min-height: 50vh;
+  text-align: center;
+`;
+
+//About Section
+
+export const Container = styled.div`
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+`;
+
+export const LeftSide = styled.div`
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  h1 {
+    color: #4e5de1;
+    font-weight: 500;
+    font-size: 2.8rem;
+    letter-spacing: 6px;
+  }
+  p {
+    padding: 4rem 0rem;
+    color: #6f6e6d;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+  }
+  button {
+    font-size: 1.2rem;
+    background-blend-mode: pass-through;
+    letter-spacing: 6px;
+  }
+`;
+
+export const RightSide = styled.div`
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  .circle {
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    scale: 1.37;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    animation: circleAnime 10s infinite linear;
+
+    @keyframes circleAnime {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+`;
+
+export const AboutCards = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  letter-spacing: 4px;
+  justify-content: center;
+  margin-top: 12rem;
+  text-align: center;
+  p {
+    margin: 0rem 0rem 2rem 0rem;
+    font-size: 1.5rem;
+    text-shadow: 0px 10px 15px rgba(78, 93, 225, 0.47);
+  }
+  span {
+    color: #4e5de1;
+  }
+`;
+
+export const Card = styled.div`
+  flex-basis: 20rem;
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;

@@ -1,0 +1,145 @@
+.study h1
+{
+/* Study Abroad Program */
+
+position: absolute;
+width: 634px;
+height: 57px;
+left: 403px;
+top: 33px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 42px;
+line-height: 51px;
+letter-spacing: 0.1em;
+
+color: #4E5DE1;
+}
+.rect1
+{
+position: absolute;
+ width: 26vw;
+height: 313px;
+left: 180px;
+top: 166px; 
+
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+border-radius: 9px;
+}
+.rect1 img
+{
+    
+position: absolute;
+width: 150px;
+height: 142px;
+left: 140px;
+top: 49px;
+justify-content: center;
+}
+.rect1 h2
+{
+/* Courses */
+
+
+position: absolute;
+width: 193px;
+height: 49px;
+left: 114px;
+top: 230px;
+
+font-family: poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 49px;
+/* identical to box height */
+
+letter-spacing: 0.13em;
+
+color: #565656;
+}
+.rect2
+{
+    position: absolute;
+width: 435px;
+height: 313px;
+left: 180px;
+top: 166px;
+
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+border-radius: 9px;
+}
+.rect2 img{
+    position: absolute;
+width: 117.76px;
+height: 101px;
+left: 168px;
+top: 65px;
+}
+.rect2 h2
+{
+    /* News and Blogs */
+
+
+position: absolute;
+width: 379px;
+height: 49px;
+left: 42px;
+top: 230px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 49px;
+/* identical to box height */
+
+letter-spacing: 0.1em;
+
+color: #565656;
+
+}
+.rect3
+{
+    
+position: absolute;
+width: 435px;
+height: 313px;
+left: 502px;
+top: 538px;
+
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+border-radius: 9px;
+}
+.rect3 img{
+    position: absolute;
+left: 45.97%;
+right: 45.97%;
+top: 63.89%;
+bottom: 22.78%;
+
+}
+.rect3 h2{
+    position: absolute;
+width: 302px;
+height: 49px;
+left: 578px;
+top: 746px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 49px;
+/* identical to box height */
+
+letter-spacing: 0.1em;
+
+color: #565656;
+
+}

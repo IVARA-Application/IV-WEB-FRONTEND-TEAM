@@ -5,8 +5,11 @@ import Home from "./Components/Home";
 import Middle from "./Components/Middle.jsx";
 import {Form,Footer,Copyright} from "./Components/Contact.js";
 import NotFound from "./Components/NotFound";
-
-
+import Classes from "./Components/classes";
+import Sabroad from "./Components/studyabroad.js";
+import IntroductionSection from "./Components/IntroductionSection";
+ import AboutSection from "./Components/AboutSection";
+import GlobalStyle from "./Components/GlobalStyle";
 
 
 function App() {
@@ -17,11 +20,17 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
-          <Home />
-          <Middle />
-          <Form />
-          <Footer />
-          <Copyright/>
+           <Home />
+           <GlobalStyle />
+           <IntroductionSection />
+           <AboutSection />
+           <Middle />
+           <Form />
+           <Footer />
+           <Copyright/> 
+           {/* <Classes/> */}
+          
+          {/* <Sabroad/> */}
         </Route>
         
         
