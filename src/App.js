@@ -12,6 +12,7 @@ import AboutSection from "./Components/AboutSection";
 import GlobalStyle from "./Components/GlobalStyle";
 import Dashboard from "./Components/newDashboard.js";
 import EntranceExamCourse from "./Components/EntranceExam";
+import SkillDev from "./Components/SkillDev";
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
           <GlobalStyle />
           <IntroductionSection />
           <AboutSection />
-          <EntranceExamCourse /> {/* Put it where ever needed */}
+          <EntranceExamCourse />
+          {/* Put it where ever needed */}
+          <SkillDev /> {/* Put it where ever needed */}
           <Middle />
           <Form />
           <Footer />

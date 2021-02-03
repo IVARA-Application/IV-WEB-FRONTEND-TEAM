@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 export const Intro = styled.div`
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
 `;
@@ -79,7 +78,7 @@ export const DoubtsCard = styled.div`
 export const Container = styled.div`
   font-family: "Poppins", sans-serif;
   display: flex;
-  min-height: 100vh;
+
   width: 90%;
   margin: auto;
   flex-wrap: wrap;
@@ -141,7 +140,7 @@ export const AboutCards = styled.div`
   align-items: center;
   letter-spacing: 4px;
   justify-content: center;
-  margin-top: 12rem;
+  margin-top: 6rem;
   text-align: center;
   p {
     margin: 0rem 0rem 2rem 0rem;
@@ -162,8 +161,9 @@ export const Card = styled.div`
   }
 `;
 
+//Entrance Section
+
 export const Entrance = styled.div`
-  min-height: 100vh;
   font-family: "Poppins", sans-serif;
   h1 {
     font-size: 2.25rem;
@@ -182,5 +182,38 @@ export const Entrance = styled.div`
   .girl {
     padding-top: 11rem;
     align-self: center;
+    border-radius: 10px;
+  }
+`;
+
+// Skill Section
+
+export const SkillContainer = styled.div`
+  width: 100%;
+  text-align: center;
+  h1 {
+    font-size: 2.25rem;
+    color: #4e5de1;
+    padding-top: 6rem;
+    letter-spacing: 4px;
+  }
+  P {
+    color: #6f6e6d;
+    font-size: 1.25rem;
+    padding: 4rem 0rem 2.5rem 0rem;
+    letter-spacing: 3px;
+  }
+  .desc {
+    align-items: center;
+  }
+  .skill-con {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+  }
+  .skill-left {
+    width: 50%;
+    margin-left: 6rem;
   }
 `;
