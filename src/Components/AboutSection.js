@@ -1,5 +1,3 @@
-//Import Icons
-
 import student from "../img/student.svg";
 import program from "../img/program.svg";
 import events from "../img/events.svg";

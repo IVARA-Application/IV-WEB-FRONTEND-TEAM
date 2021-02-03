@@ -1,11 +1,51 @@
-import React from "react";
+import React,{useState} from "react";
 import { render } from "react-dom";
 import "./Contact.css";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
+import {baseUrl} from "../constants/index";
+
 const Form2 = () => {
+
+  const [name,setName] = useState("");
+  const [email,setEmail] = useState("");
+  const [query,setQuery] = useState("");
+
+  const onSubmit = () =>{
+    const details = {"Name": name, "Email": email, "Query": query}
+      fetch(baseUrl + "contactus/" , {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(details),
+      })
+        .then(
+          (response) => {
+            if (response.ok) {
+              return (
+                response.json()
+              );
+            } else {
+              var error = new Error(
+                "Error " + response.status + ": " + response.statusText
+              );
+              error.response = response;
+              throw error;
+            }
+          },
+          (error) => {
+            throw error;
+          }
+        )
+        .then(() => console.log("Post Successful"))
+        .catch((error) => {
+          console.log("Post Contact Details Error", error.message);
+        });
+  }
+
   return (
     <Form>
       <div class="fade-in">
@@ -19,19 +59,19 @@ const Form2 = () => {
   <n>
     <p>Drop down your Queries and we will<br/> be right back with our answers!</p>
       <FormGroup>
-        <Input type="text" name="name" id="name"/>
+        <Input type="text" name="name" id="name" value={name} onChange={(e)=>{setName(e.target.value)}}/>
         <Label for="name">Name</Label>
       </FormGroup>
       <FormGroup>
-        <Input type="email" name="email" id="email" />
+        <Input type="email" name="email" id="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} />
         <Label for="email">Email</Label>
       </FormGroup>
       
       <FormGroup>
-        <Input type="text" name="message" id="message"/>
+        <Input type="text" name="message" id="message" value={query} onChange={(e)=>{setQuery(e.target.value)}} />
         <Label for="message">Query</Label>
       </FormGroup>
-      <Button>Submit</Button>
+      <Button onClick={()=>{onSubmit()}}>Submit</Button>
       </n>
       </div>
     </Form>
