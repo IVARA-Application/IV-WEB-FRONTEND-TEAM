@@ -161,3 +161,26 @@ export const Card = styled.div`
     justify-content: center;
   }
 `;
+
+export const Entrance = styled.div`
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  h1 {
+    font-size: 2.25rem;
+    color: #4e5de1;
+    padding-top: 6rem;
+    letter-spacing: 4px;
+  }
+  P {
+    color: #6f6e6d;
+    font-size: 1.25rem;
+    padding: 4rem 0rem 2.5rem 0rem;
+    letter-spacing: 3px;
+  }
+  text-align: center;
+  align-items: center;
+  .girl {
+    padding-top: 11rem;
+    align-self: center;
+  }
+`;
