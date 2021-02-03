@@ -326,3 +326,15 @@
   background: transparent;
   color: #fff !important;
 }
+.bird {
+  animation: anime 0.75s infinite linear alternate;
+}
+
+@keyframes anime {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}

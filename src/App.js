@@ -6,11 +6,11 @@ import Middle from "./Components/Middle.jsx";
 import {Form,Footer,Copyright} from "./Components/Contact.js";
 import NotFound from "./Components/NotFound";
 import Classes from "./Components/classes";
-import Sabroad from "./Components/studyabroad.js";
+import StudyAbroad from "./Components/newStudy.js";
 import IntroductionSection from "./Components/IntroductionSection";
  import AboutSection from "./Components/AboutSection";
 import GlobalStyle from "./Components/GlobalStyle";
-
+import Dashboard from "./Components/newDashboard.js";
 
 function App() {
 
@@ -30,10 +30,13 @@ function App() {
            <Copyright/> 
            {/* <Classes/> */}
           
-          {/* <Sabroad/> */}
+          {/* <StudyAbroad/> */}
+          
         </Route>
         
-        
+        <Route exact path="/dashboard">
+          <Dashboard /> 
+        </Route>
         <Route path="*">
           <NotFound />
         </Route>

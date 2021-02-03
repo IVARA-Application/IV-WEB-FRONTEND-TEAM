@@ -1,145 +1,131 @@
-.study h1
+.heading1
 {
-/* Study Abroad Program */
+  /* Study Abroad Program */
+
 
 position: absolute;
-width: 634px;
-height: 57px;
-left: 403px;
-top: 33px;
+/* width: 634px;
+height: 57px; */
+left: 35vw;
+top: 3vh;
 
-font-family: Montserrat;
+font-family: Poppins;
 font-style: normal;
 font-weight: 500;
-font-size: 42px;
+font-size: 2vw;
 line-height: 51px;
 letter-spacing: 0.1em;
 
 color: #4E5DE1;
 }
-.rect1
-{
-position: absolute;
- width: 26vw;
-height: 313px;
-left: 180px;
-top: 166px; 
+.rect1 {
+  position: absolute;
+  width: 23vw;
+  height: 36vh;
+  left: 5vw;
+  top: 9vh;
 
-background: #FFFFFF;
-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-border-radius: 9px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
 }
-.rect1 img
-{
-    
-position: absolute;
-width: 150px;
-height: 142px;
-left: 140px;
-top: 49px;
-justify-content: center;
+
+.rect2 {
+  position: absolute;
+  width: 23vw;
+  height: 36vh;
+  right: 5vw;
+  top: 9vh;
+
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
 }
-.rect1 h2
-{
-/* Courses */
 
+.rect3 {
+  position: absolute;
+  width: 23vw;
+  height: 36vh;
+  top: 50vh;
 
-position: absolute;
-width: 193px;
-height: 49px;
-left: 114px;
-top: 230px;
-
-font-family: poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 49px;
-/* identical to box height */
-
-letter-spacing: 0.13em;
-
-color: #565656;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
 }
-.rect2
-{
-    position: absolute;
-width: 435px;
-height: 313px;
-left: 180px;
-top: 166px;
 
-background: #FFFFFF;
-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-border-radius: 9px;
+.rect1 img {
+  position: absolute;
+  width: 15vw;
+  height: 15vh;
+  left: 4vw;
+  top: 6vh;
+  justify-content: center;
 }
-.rect2 img{
-    position: absolute;
-width: 117.76px;
-height: 101px;
-left: 168px;
-top: 65px;
+.rect1 h2 {
+  position: absolute;
+  width: 10vw;
+  height: 10vh;
+  left: 6vw;
+  top: 23vh;
+
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vw;
+  line-height: 49px;
+
+  letter-spacing: 0.13em;
+
+  color: #565656;
 }
-.rect2 h2
-{
-    /* News and Blogs */
 
-
-position: absolute;
-width: 379px;
-height: 49px;
-left: 42px;
-top: 230px;
-
-font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 49px;
-/* identical to box height */
-
-letter-spacing: 0.1em;
-
-color: #565656;
-
+.rect2 img {
+  position: absolute;
+  width: 15vw;
+  height: 15vh;
+  left: 4vw;
+  top: 6vh;
+  justify-content: center;
 }
-.rect3
-{
-    
-position: absolute;
-width: 435px;
-height: 313px;
-left: 502px;
-top: 538px;
+.rect2 h2 {
+  position: absolute;
+  width: 10vw;
+  height: 10vh;
+  left: 7vw;
+  top: 23vh;
 
-background: #FFFFFF;
-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-border-radius: 9px;
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vw;
+
+  letter-spacing: 0.13em;
+
+  color: #565656;
 }
-.rect3 img{
-    position: absolute;
-left: 45.97%;
-right: 45.97%;
-top: 63.89%;
-bottom: 22.78%;
 
+.rect3 img {
+  position: absolute;
+  width: 15vw;
+  height: 15vh;
+  left: 4vw;
+  top: 6vh;
+  justify-content: center;
 }
-.rect3 h2{
-    position: absolute;
-width: 302px;
-height: 49px;
-left: 578px;
-top: 746px;
+.rect3 h2 {
+  position: absolute;
+  width: 10vw;
+  height: 10vh;
+  left: 4vw;
+  top: 23vh;
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 49px;
-/* identical to box height */
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vw;
+  line-height: 49px;
 
-letter-spacing: 0.1em;
+  letter-spacing: 0.13em;
 
-color: #565656;
-
+  color: #565656;
 }

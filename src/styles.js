@@ -3,35 +3,32 @@ import styled from "styled-components";
 //Introduciton Section
 
 export const Intro = styled.div`
-  width: 80%;
+  width: 100%;
   min-height: 100vh;
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 `;
 
 export const Cards = styled.div`
-  width: 90%;
+  width: 100%;
   margin: auto;
   font-family: "Roboto", sans-serif;
   display: flex;
-  flex-wrap: wrap;
   background: white;
   margin-top: 10rem;
   padding: 0rem 2rem;
-
-  .arrow {
-    margin: 3rem 0rem;
-  }
-
+  justify-content: center;
   color: #4e5de1;
   letter-spacing: 5px;
   -webkit-letter-spacing: 5px;
   font-weight: 400;
-  font-size: 2rem;
+  .arrow {
+    margin: 3rem 0rem;
+  }
   .card-desc {
     padding: 1rem 0rem;
     margin: 2rem 0rem;
+    font-size: 2rem;
   }
   .short-desc {
     font-size: 1.2rem;
@@ -41,7 +38,6 @@ export const Cards = styled.div`
     border-radius: 12px;
     box-shadow: -5px 15px 30px 0px rgba(0, 0, 0, 0.25);
     animation: anime 0.75s infinite linear alternate 0.1s;
-
     @keyframes anime {
       from {
         transform: translateY(0px);
@@ -123,12 +119,11 @@ export const RightSide = styled.div`
     position: absolute;
     z-index: -1;
     top: 20%;
-    scale: 1.37;
+    scale: 1.25;
     left: 21%;
     transform: translate(-50%, -50%);
     transform-origin: center;
     animation: circleAnime 10s infinite linear;
-
     @keyframes circleAnime {
       from {
         transform: rotate(0deg);

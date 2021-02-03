@@ -41,7 +41,7 @@ const IntroductionSection = () => {
               We clarify your <br />
               doubts even at <br /> 3 AM
             </p>
-            <p className="short-desc">27x7 Doubts Portal </p>
+            <p className="short-desc">24x7 Doubts Portal </p>
             <img className="arrow" src={Arrow} alt="" />
           </div>
         </DoubtsCard>
