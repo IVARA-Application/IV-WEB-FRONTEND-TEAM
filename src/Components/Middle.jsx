@@ -1,7 +1,7 @@
 import React from "react";
 import svg3 from "./images/girl.jpg";
 import svg4 from "./images/childrens.jpg";
-// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Middle.css';
 const SectionFour = () => {
   return (

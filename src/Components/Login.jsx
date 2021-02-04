@@ -1,6 +1,6 @@
 import React,{ useState } from "react";
 import "./Login.css";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Login = () => {
 
    const [number, setnumber] = useState("");
@@ -33,7 +33,7 @@ const Login = () => {
                 aria-describedby="addon-wrapping"
               />
             </div>
-            <button className="btn submitButton" type="submit">Login</button>
+            <button className="btn submitButton" type="submit">LOGIN</button>
             <p className="emailId">Continue with Google</p>
           </div>
         </form>

@@ -14,6 +14,7 @@ import Dashboard from "./Components/newDashboard.js";
 import EntranceExamCourse from "./Components/EntranceExam";
 import SkillDev from "./Components/SkillDev";
 import Login from "./Components/Login"
+import Scholarship from "./Components/Scholarship"
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
 
         <Route exact path="/dashboard">
           <Dashboard />
+        </Route>
+        <Route exact path="/scholarship">
+          <Scholarship />
         </Route>
         <Route path="*">
           <NotFound />
