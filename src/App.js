@@ -15,6 +15,8 @@ import EntranceExamCourse from "./Components/EntranceExam";
 import SkillDev from "./Components/SkillDev";
 import Login from "./Components/Login"
 import Scholarship from "./Components/Scholarship"
+import NewsandBlogs from "./Components/NewsandBlogs"
+import Articles from "./Components/Articles"
 
 function App() {
   return (
@@ -33,8 +35,8 @@ function App() {
           <Form2 />
           <Footer />
           <Copyright />
-          {/* <Classes/> */}
-          {/* <StudyAbroad/> */}
+          
+          
         </Route>
 
         <Route exact path="/dashboard">
@@ -42,6 +44,18 @@ function App() {
         </Route>
         <Route exact path="/scholarship">
           <Scholarship />
+        </Route>
+        <Route exact path="/newsandblogs">
+          <NewsandBlogs />
+        </Route>
+        <Route exact path="/articles">
+          <Articles />
+        </Route>
+        <Route exact path="/studyabroad">
+          <StudyAbroad/>
+        </Route>
+        <Route exact path="/class4">
+          <Classes/>
         </Route>
         <Route path="*">
           <NotFound />

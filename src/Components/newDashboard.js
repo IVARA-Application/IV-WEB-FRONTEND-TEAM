@@ -12,7 +12,7 @@ import Card from 'react-bootstrap/Card';
 const Dashboard =()=>
 {
     return (
-        <div className="container">
+        <div className="container-dashboard">
           
             <u className="heading1">IVARA</u>
             

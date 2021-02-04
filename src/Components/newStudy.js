@@ -7,8 +7,10 @@ import "./studyabroad.css";
 const StudyAbroad = () => {
   return (
     <>
-    <div className="container">
-      <h1 className="heading1">Study Abroad Preparation</h1>
+    <div className="container-study">
+      <div className="d-flex justify-content-center mt-2">
+      <h1 className="headingstudy">Study Abroad Preparation</h1>
+      </div>
         <div className="row">
             <div className="col-lg-6 col-12 d-flex justify-content-center mt-5">
             <div className="rect1 ">

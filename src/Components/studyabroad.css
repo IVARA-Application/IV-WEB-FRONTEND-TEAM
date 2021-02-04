@@ -1,4 +1,13 @@
-.heading1
+.container-study
+{
+  background: hsl(0, 0%, 100%);
+    width: 80%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.headingstudy
 {
   /* Study Abroad Program */
 
@@ -6,8 +15,8 @@
 position: absolute;
 /* width: 634px;
 height: 57px; */
-left: 35vw;
-top: 3vh;
+/* left: 35vw;
+top: 3vh; */
 
 font-family: Poppins;
 font-style: normal;

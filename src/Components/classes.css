@@ -13,12 +13,13 @@ top: 16.44%;
 bottom: 75.33%;
 background: #5B8CF5;
 border-radius: 8px;
+align-items: center;
 }
 .text1{
 position: absolute;
 left: 18.47%;
 /* right: 78.47%; */
-top: -8px;
+top:15px;
 bottom: 77.56%; 
 font-family: Poppins;
 font-style: normal;
