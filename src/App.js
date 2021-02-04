@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext} from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
  import Home from "./Components/Home";
@@ -18,10 +18,17 @@ import Scholarship from "./Components/Scholarship"
 import NewsandBlogs from "./Components/NewsandBlogs"
 import Articles from "./Components/Articles"
 
+
+import { AuthContext } from './HOC/LoginHOC';
+
 function App() {
+  const {
+    auth
+  } = useContext(AuthContext);
   return (
     <BrowserRouter>
       <Switch>
+        {!auth?
         <Route exact path="/">
           <Home />
           <GlobalStyle />
@@ -35,11 +42,10 @@ function App() {
           {/* <Form2 />
           <Footer /> 
           <Copyright /> */}
-          
-          
         </Route>
-
-        <Route exact path="/dashboard">
+        :
+        <>
+        <Route exact path="/">
           <Dashboard />
         </Route>
         <Route exact path="/scholarship">
@@ -57,9 +63,14 @@ function App() {
         <Route exact path="/class4">
           <Classes/>
         </Route>
+        </>
+        }
+        
+
         <Route path="*">
           <NotFound />
         </Route>
+        
       </Switch>
     </BrowserRouter>
   );

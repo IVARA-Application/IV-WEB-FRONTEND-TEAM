@@ -2,16 +2,12 @@ import React, { createContext, useState,useEffect } from 'react';
 export const AuthContext = createContext();
 
 
-
 export const AuthContextProvider = ({ children }) => {
-  
-  useEffect(()=>{
-  },[]);
 
     const [user, setUser] = useState({});
-    const [token, setToken] = useState(localStorage.getItem('token'));
-    const [auth, setAuth] = useState(localStorage.getItem('token') ? true : false);
-
+    const [token, setToken] = useState("");
+    const [auth, setAuth] = useState(false);
+  
     const contextValue = {
       user,
       setUser,
