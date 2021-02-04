@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./Components/Home";
 import Middle from "./Components/Middle.jsx";
-import { Form, Footer, Copyright } from "./Components/Contact.js";
+import { Form2, Footer, Copyright } from "./Components/Contact.js";
 import NotFound from "./Components/NotFound";
 import Classes from "./Components/classes";
 import StudyAbroad from "./Components/newStudy.js";
@@ -13,6 +13,7 @@ import GlobalStyle from "./Components/GlobalStyle";
 import Dashboard from "./Components/newDashboard.js";
 import EntranceExamCourse from "./Components/EntranceExam";
 import SkillDev from "./Components/SkillDev";
+import Login from "./Components/Login"
 
 function App() {
   return (
@@ -23,11 +24,12 @@ function App() {
           <GlobalStyle />
           <IntroductionSection />
           <AboutSection />
-          <EntranceExamCourse />
+          {/* <EntranceExamCourse /> */}
           {/* Put it where ever needed */}
-          <SkillDev /> {/* Put it where ever needed */}
+          {/* <SkillDev /> Put it where ever needed */}
           <Middle />
-          <Form />
+          <Login />
+          <Form2 />
           <Footer />
           <Copyright />
           {/* <Classes/> */}

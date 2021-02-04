@@ -24,7 +24,7 @@ const Home = () => {
               <div className="row justify-content-between"> 
               <button
                   className="form-btn"
-                  style={{borderRadius: "10px",height: "45px",lineHeight: "40px", backgroundColor:"#105af6" , marginTop:"10px", marginLeft:"10px"}}>
+                  style={{borderRadius: "10px",height: "45px", backgroundColor:"#105af6" , marginTop:"10px", marginLeft:"10px"}}>
                   Explore More
                 </button></div>
              <div className="row justify-content-between"></div>

@@ -1,12 +1,54 @@
-import React from "react";
+import React,{useState} from "react";
 import { render } from "react-dom";
 import "./Contact.css";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
 
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-const Form = () => (
-  <form>
-    <div class="fade-in">
+import {baseUrl} from "../constants/index";
+import axios from "axios";
+
+const Form2 = () => {
+
+  const [name,setName] = useState("");
+  const [email,setEmail] = useState("");
+  const [query,setQuery] = useState("");
+
+  const onSubmit = () =>{
+    const details = {"name": name, "email": email, "query": query}
+    console.log(details)
+
+    axios
+    .post(baseUrl + "contactus/", details)
+    .then(
+      (response) => {
+        if (response.ok) {
+          return response;
+        } else {
+          var error = new Error(
+            "Error " + response.status + ": " + response.statusText
+          );
+          error.response = response;
+          throw error;
+        }
+      },
+      (error) => {
+        throw error;
+      }
+    )
+    .then((response) => response.json())
+    .catch((error) => {
+      console.log("post contact us", error.message);
+    });
+
+    setEmail("");
+    setName("");
+    setQuery("");
+  }
+
+  return (
+    <Form>
+      <div class="fade-in">
     <content>
       {" "}
       <p>It’s just the beginning in
@@ -15,32 +57,26 @@ const Form = () => (
       <p><span> We have a lot coming sooon!!</span></p>{" "}
     </content>
   <n>
-    <br/><br/>
-    <p>Drop down your Queries and we<br/> will be right back with our answers!</p>
-    <m>
-      <input type="text" />
-      Name
-    </m>
-    <m>
-      <input type="email" />
-      Email
-    </m>
-    <m>
-      <input type="text" />
-      Query
-    </m>
-    <span>
-    <div id="push">
-      <input type="submit" value="Submit" />
-      </div>
-      </span>
+    <p>Drop down your Queries and we will<br/> be right back with our answers!</p>
+      <FormGroup>
+        <Input type="text" name="name" id="name" value={name} onChange={(e)=>{setName(e.target.value)}}/>
+        <Label for="name">Name</Label>
+      </FormGroup>
+      <FormGroup>
+        <Input type="email" name="email" id="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} />
+        <Label for="email">Email</Label>
+      </FormGroup>
+      
+      <FormGroup>
+        <Input type="text" name="message" id="message" value={query} onChange={(e)=>{setQuery(e.target.value)}} />
+        <Label for="message">Query</Label>
+      </FormGroup>
+      <Button onClick={()=>{onSubmit()}}>Submit</Button>
       </n>
-    </div>
-
-    
-  </form>
-
+      </div>
+    </Form>
 );
+  }
 
 const Footer = () => (
   <footer className="footer">
@@ -110,7 +146,9 @@ const Copyright = () => (
   </footer>
 );
 render(
-  [<Form key="1" />, <Footer key="2" />, <Copyright key="3" />],
+  [<Form2 key="1" />, <Footer key="2" />, <Copyright key="3" />],
   document.getElementById("root")
 );
-export {Form,Footer,Copyright};
+
+
+export {Form2,Footer,Copyright};

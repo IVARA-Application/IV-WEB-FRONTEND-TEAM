@@ -147,7 +147,7 @@
 }
 .form-btn {
   background-color: darkblue;
-  line-height: 42px;
+  /* line-height: 42px; */
   padding-left: 30px;
   padding-right: 30px;
   border: 1px solid transparent;
@@ -155,6 +155,7 @@
   display: inline-block;
   font-weight: 500;
   position: relative;
+  font-family: poppins;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
