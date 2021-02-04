@@ -16,11 +16,11 @@ const AboutSection = () => {
           Our stats speak <br /> about us
         </h1>
         <p>
-          Get unlimited access to <br /> structured courses & doubt <br />{" "}
+          Get unlimited access to <br /> structured courses & doubt <br />
           clearing sessions
         </p>
         <a href="#">
-          <button>Start Learning</button>
+          <button className="sbtn">Start Learning</button>
         </a>
       </LeftSide>
       <RightSide>

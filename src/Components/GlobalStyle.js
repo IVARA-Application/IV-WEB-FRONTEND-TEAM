@@ -18,14 +18,28 @@ const GlobalStyle = createGlobalStyle`
             }
         }
     @media (max-width: 1600px){
-        
+            
             font-size: 90%;
+            .sbtn{
+            letter-spacing: 4px;
+            }
             .circle{
                 width: 28rem;
+            }
+            p{
+                letter-spacing: 5px;
             }
         }
     @media (max-width: 1424px){
             font-size: 80%;
+
+            p {
+                letter-spacing: 4px;
+            }
+
+            .sbtn{
+            letter-spacing: 3px;
+            }
             .circle{
             width: 30rem;
             }
@@ -39,6 +53,10 @@ const GlobalStyle = createGlobalStyle`
         }
     @media (max-width: 1200px){
         font-size: 70%;
+        .sbtn{
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+        }
         .circle{
             top: 50%;
             left: 50%;
@@ -49,20 +67,34 @@ const GlobalStyle = createGlobalStyle`
             padding-top: 4rem;
             width: 70%;
             }
+            p{
+                letter-spacing: 4px;
+            }
         }
     @media (max-width: 1100px){
 
         font-size: 60%;
+        p{
+            letter-spacing: 3px;
+        }
 
         }
+    }
+    @media (max-width: 1010px)
+    {
+        font-size:50%;
+        p{
+            letter-spacing: 1px;
+        }
+
     }
     body{
 
     background: #FFF;
     font-family: "Poppins",sans-serif;
     }
+    
     button{
-
     cursor: pointer;
     background: rgba(16, 90, 246,0.72);
     color: white;
@@ -74,6 +106,7 @@ const GlobalStyle = createGlobalStyle`
         p {
         mix-blend-mode: screen;
         }
+        
     }
 
 

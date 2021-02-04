@@ -140,7 +140,7 @@ export const AboutCards = styled.div`
   align-items: center;
   letter-spacing: 4px;
   justify-content: center;
-  margin-top: 6rem;
+  margin: 6rem 0rem;
   text-align: center;
   p {
     margin: 0rem 0rem 2rem 0rem;
