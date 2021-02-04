@@ -1,6 +1,7 @@
 import React,{ useState } from "react";
 import "./Login.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 const Login = () => {
 
    const [number, setnumber] = useState("");
@@ -14,8 +15,8 @@ const Login = () => {
     }
 
   return (
-    <>
-      <div className="container-fluid">
+    <> 
+      <div className="container-fluid ">
         <form onSubmit={onSubmits}>
           <div className="container">
             <h1 className="loginHeading">Login</h1>
@@ -33,7 +34,7 @@ const Login = () => {
                 aria-describedby="addon-wrapping"
               />
             </div>
-            <button className="btn submitButton" type="submit">LOGIN</button>
+            <button className="btn submitButton" type="submit">Login</button>
             <p className="emailId">Continue with Google</p>
           </div>
         </form>
@@ -42,4 +43,5 @@ const Login = () => {
     </>
   );
 };
+
 export default Login;

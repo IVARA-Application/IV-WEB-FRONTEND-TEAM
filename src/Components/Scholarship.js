@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 const Scholarship =()=>
 {
     return (
-        <div className="container-fluid">
+        <div className="container-scholar">
           <div className="d-flex justify-content-center" style={{marginTop:"30px"}}>
           <p className="scholarship">Scholarships</p>
           </div>
