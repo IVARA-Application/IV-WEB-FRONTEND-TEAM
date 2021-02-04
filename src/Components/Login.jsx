@@ -1,7 +1,6 @@
 import React,{ useState } from "react";
 import "./Login.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 const Login = () => {
 
    const [number, setnumber] = useState("");
@@ -16,9 +15,9 @@ const Login = () => {
 
   return (
     <> 
-      <div className="container-fluid ">
+      <div className="container-fluid login-container">
         <form onSubmit={onSubmits}>
-          <div className="container">
+          <div className="container login ">
             <h1 className="loginHeading">Login</h1>
             <h4 className="subHeading">Or Create a new account</h4>
             <div class="input-group inputContainer flex-nowrap">
@@ -34,8 +33,8 @@ const Login = () => {
                 aria-describedby="addon-wrapping"
               />
             </div>
-            <button className="btn submitButton" type="submit">Login</button>
-            <p className="emailId">Continue with Google</p>
+            <button className=" submitButton" type="submit">Login</button>
+            <button className="emailId  submitButton">Continue with Google</button>
           </div>
         </form>
         <p className="contact">Having trouble? Please contact help@iventorsinitiatives.com for further support.</p>

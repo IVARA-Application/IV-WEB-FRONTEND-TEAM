@@ -22,7 +22,7 @@ const SectionFour = () => {
         <h1 class="big-heading mx-auto">
           Join our Initiative called as HealMyMind
         </h1>
-        <button type="button" class="btn btn-light btn-lg mx-auto d-block">
+        <button type="button" class=" btn-light btn-lg mx-auto d-block">
           Book Now! IT’s FREEE
         </button>
       </div>
