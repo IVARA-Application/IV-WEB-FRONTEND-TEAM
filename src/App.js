@@ -14,8 +14,30 @@ import Dashboard from "./Components/newDashboard.js";
 import EntranceExamCourse from "./Components/EntranceExam";
 import Login from "./Components/Login"
 
+import { ConversionContextProvider } from './HOC/LoginHoc';
+
 function App() {
+
+  const PrivateRoute = ({ component: Component, ...rest }) => (
+    <Route
+      {...rest}
+      render={(props) =>
+        this.props.auth.isAuthenticated ? (
+          <Component {...props} />
+        ) : (
+          <Redirect
+            to={{
+              pathname: "/home",
+              state: { from: props.location },
+            }}
+          />
+        )
+      }
+    />
+  );
+
   return (
+    <ConversionContextProvider>
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
@@ -42,6 +64,7 @@ function App() {
         </Route>
       </Switch>
     </BrowserRouter>
+    </ConversionContextProvider>
   );
 }
 
