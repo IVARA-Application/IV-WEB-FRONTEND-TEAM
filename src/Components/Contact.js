@@ -6,6 +6,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from "react
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 import {baseUrl} from "../constants/index";
+import axios from "axios";
 
 const Form2 = () => {
 
@@ -17,58 +18,32 @@ const Form2 = () => {
     const details = {"name": name, "email": email, "query": query}
     console.log(details)
 
-    const requestOptions = {
-      mode: 'no-cors',
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({name,email,query})
-  };
-  console.log(requestOptions.body)
-  fetch(baseUrl + 'contactus', requestOptions)
-  .then(async response => {
-    const data = await response.json();
+    axios
+    .post(baseUrl + "contactus/", details)
+    .then(
+      (response) => {
+        if (response.ok) {
+          return response;
+        } else {
+          var error = new Error(
+            "Error " + response.status + ": " + response.statusText
+          );
+          error.response = response;
+          throw error;
+        }
+      },
+      (error) => {
+        throw error;
+      }
+    )
+    .then((response) => response.json())
+    .catch((error) => {
+      console.log("post contact us", error.message);
+    });
 
-    // check for error response
-    if (!response.ok) {
-        // get error message from body or default to response status
-        const error = (data && data.message) || response.status;
-        return Promise.reject(error);
-    }
-
-    
-})
-.catch(error => {
-    console.error('There was an error!', error);
-});
-      // fetch(baseUrl + "contactus" , {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify(details),
-      // })
-      //   .then(
-      //     (response) => {
-      //       if (response.ok) {
-      //         return (
-      //           response.json()
-      //         );
-      //       } else {
-      //         var error = new Error(
-      //           "Error " + response.status + ": " + response.statusText
-      //         );
-      //         error.response = response;
-      //         throw error;
-      //       }
-      //     },
-      //     (error) => {
-      //       throw error;
-      //     }
-      //   )
-      //   .then(() => console.log("Post Successful"))
-      //   .catch((error) => {
-      //     console.log("Post Contact Details Error", error.message);
-      //   });
+    setEmail("");
+    setName("");
+    setQuery("");
   }
 
   return (
