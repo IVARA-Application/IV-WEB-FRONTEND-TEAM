@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
             .circle{
             width: 28rem;
             }
-            .skill{
+            .skill,.vtc{
             padding-top: 4rem;
             }
         }
@@ -42,13 +42,17 @@ const GlobalStyle = createGlobalStyle`
             }
             .circle{
             width: 30rem;
+            transform: translate(-50%, -50%);
             }
-            .skill{
+            .skill,.vtc{
             padding-top: 4rem;
             width: 80%;
             }
             .girl{
                 width: 25%;
+            }
+            .girl1,.books{
+                width: 80%;
             }
         }
     @media (max-width: 1200px){
@@ -58,14 +62,16 @@ const GlobalStyle = createGlobalStyle`
             font-size: 1.2rem;
         }
         .circle{
-            top: 50%;
-            left: 50%;
             height: 30rem;
             width: 30rem;
+            transform: translate(-50%,-50%);
             }
-            .skill{
+            .skill,.vtc{
             padding-top: 4rem;
             width: 70%;
+            }
+            .girl1,.books{
+                width: 70%;
             }
             p{
                 letter-spacing: 4px;
@@ -78,16 +84,20 @@ const GlobalStyle = createGlobalStyle`
             letter-spacing: 3px;
         }
 
-        }
     }
-    @media (max-width: 1010px)
-    {
+        @media (max-width: 1010px){
         font-size:50%;
-        p{
-            letter-spacing: 1px;
+        p,h1{
+            letter-spacing: 0px;
         }
-
     }
+    @media (max-width: 890px){
+        .circle{
+            opacity: 0;
+        }
+    }
+}
+    
     body{
 
     background: #FFF;

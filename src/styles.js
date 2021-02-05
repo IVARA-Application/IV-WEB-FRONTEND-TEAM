@@ -78,7 +78,6 @@ export const DoubtsCard = styled.div`
 export const Container = styled.div`
   font-family: "Poppins", sans-serif;
   display: flex;
-
   width: 90%;
   margin: auto;
   flex-wrap: wrap;
@@ -112,13 +111,14 @@ export const LeftSide = styled.div`
 
 export const RightSide = styled.div`
   width: 50%;
+  min-height: 80vh;
   position: relative;
-  overflow: hidden;
+
   .circle {
     position: absolute;
     z-index: -1;
     top: 20%;
-    scale: 1.25;
+    scale: 1.18;
     left: 21%;
     transform: translate(-50%, -50%);
     transform-origin: center;
@@ -141,6 +141,7 @@ export const AboutCards = styled.div`
   letter-spacing: 4px;
   justify-content: center;
   margin: 6rem 0rem;
+  padding-top: 5rem;
   text-align: center;
   p {
     margin: 0rem 0rem 2rem 0rem;
@@ -215,5 +216,65 @@ export const SkillContainer = styled.div`
   .skill-left {
     width: 50%;
     margin-left: 6rem;
+  }
+`;
+
+//Virtual tuition Section
+
+export const VtcMain = styled(SkillContainer)`
+  .vtc-con {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+  }
+  .desc {
+    margin-bottom: 6rem;
+  }
+  .vtc-left {
+    width: 50%;
+    margin-left: 6rem;
+    text-align: center;
+  }
+  .vtc-right {
+    width: 50%;
+  }
+`;
+
+//Study Aboard Section
+
+export const SacMain = styled(Entrance)`
+  h1 {
+    margin-bottom: 4rem;
+  }
+`;
+
+//Previous Year Papers
+export const PypContainer = styled.div`
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  h1 {
+    font-size: 2.25rem;
+    color: #4e5de1;
+    padding-top: 6rem;
+    letter-spacing: 4px;
+  }
+  P {
+    color: #6f6e6d;
+    font-size: 1.25rem;
+    padding: 2rem 0rem 1rem 0rem;
+    letter-spacing: 3px;
+  }
+  .img {
+    padding-right: 20rem;
+    .girl1 {
+      border-radius: 5px;
+    }
   }
 `;
