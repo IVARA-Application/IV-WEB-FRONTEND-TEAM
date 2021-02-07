@@ -29,6 +29,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         {!auth ? (
+          <>
           <Route exact path="/">
             <Home />
             <GlobalStyle />
@@ -45,9 +46,17 @@ function App() {
           <Footer /> 
           <Copyright /> */}
           </Route>
+           <Route exact path="/dashboard/:id">
+           <Dashboard />
+         </Route>
+         </>
         ) : (
           <>
-            <Route exact path="/">
+           
+           <Route exact path="/">
+           <Dashboard />
+         </Route>
+            <Route exact path="/dashboard/:id">
               <Dashboard />
             </Route>
             <Route exact path="/scholarship">
