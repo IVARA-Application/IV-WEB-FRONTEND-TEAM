@@ -116,7 +116,7 @@ export const RightSide = styled.div`
 
   .circle {
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     top: 20%;
     scale: 1.18;
     left: 21%;
@@ -238,6 +238,9 @@ export const VtcMain = styled(SkillContainer)`
   }
   .vtc-right {
     width: 50%;
+  }
+  .vtc {
+    border-radius: 5px;
   }
 `;
 

@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -261,18 +260,16 @@
 
 .banner-content h2 {
   color: rgb(255, 255, 255);
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 70px;
   /* font-weight: 100; */
   line-height: 1em;
-  
 }
 .banner-content h3 {
   color: rgb(255, 255, 255);
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   /* font-weight: 10; */
   word-spacing: 3px;
-  
 }
 
 @media (max-width: 991.98px) {
@@ -329,6 +326,27 @@
 }
 .bird {
   animation: anime 0.75s infinite linear alternate;
+}
+
+.girl {
+  animation: anime 1s infinite linear alternate;
+}
+
+.skill {
+  animation: anime 1.5s infinite linear alternate;
+}
+
+.vtc {
+  animation: anime 1s infinite linear alternate;
+}
+
+.sac {
+  animation: anime 1.25s infinite linear alternate;
+}
+
+.girl1,
+.books {
+  animation: anime 1.25s infinite linear alternate;
 }
 
 @keyframes anime {

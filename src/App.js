@@ -35,10 +35,10 @@ function App() {
             <IntroductionSection />
             <AboutSection />
             {/*<EntranceExamCourse />   Put it where ever needed */}
-            {/* <SkillDev /> Put it where ever needed */}
-            {/*<VirtualTuitionCourses /> Put it where ever needed */}
+            {/*<SkillDev /> Put it where ever needed */}
+            {/* <VirtualTuitionCourses /> Put it where ever needed */}
             {/*<StudyAboardCourse /> Put it where ever needed */}
-            {/* <PreviousYearSection /> Put it where ever needed */}
+            {/*<PreviousYearSection /> Put it where ever needed */}
             <Middle />
             <Login />
             {/* <Form2 />
