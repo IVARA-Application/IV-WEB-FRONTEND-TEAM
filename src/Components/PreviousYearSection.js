@@ -14,9 +14,8 @@ const PreviousYearSection = () => {
         <div className="description">
           <h1>Previous Year papers</h1>
           <p>
-            We offer a wide range of previous year <br /> papers and sample
-            papers for classes <br />
-            4-12
+            We offer a wide range of previous year papers and sample papers for
+            classes 4-12
           </p>
           <img src={arrow} alt="" />
         </div>
@@ -26,10 +25,10 @@ const PreviousYearSection = () => {
           <img className="books" src={books} alt="" />
         </div>
         <div className="description">
-          <h1>Previous Year papers</h1>
+          <h1>E-Books and E-Test Series</h1>
           <p>
-            We have a vast range of E-books and <br /> E-test series for all
-            subjects of classes <br /> 4-12
+            We have a vast range of E-books and E-test series for all subjects
+            of classes 4-12
           </p>
           <img src={arrow} alt="" />
         </div>

@@ -14,17 +14,13 @@ const VirtualTuitionCourses = () => {
         </div>
         <div className="vtc-right">
           <p>
-            The new normal demands the safe <br /> education for students, and
-            as well as for <br /> teachers. With IVARA virtual tuition doesn't
-            <br /> only mean sitting in front of camera, but
-            <br /> experiencing the 3D model in your own
-            <br /> house. It includes the graphs, figures,
-            <br /> diagrams and many more. No more back
-            <br /> pain and eyes irritation. This will also make
-            <br /> you education and fun learning-based
-            <br /> teaching methods. The availability of tutors
-            <br /> makes sure student's study goes smooth
-            <br /> with less doubt.
+            The new normal demands the safe education for students, and as well
+            as for teachers. With IVARA virtual tuition doesn't only mean
+            sitting in front of camera, but experiencing the 3D model in your
+            own house. It includes the graphs, figures, diagrams and many more.
+            No more back pain and eyes irritation. This will also make you
+            education and fun learning-based teaching methods. The availability
+            of tutors makes sure student's study goes smooth with less doubt.
           </p>
         </div>
       </div>
