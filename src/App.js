@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./Components/Home";
 import Middle from "./Components/Middle.jsx";
-// import { Form2, Footer, Copyright } from "./Components/Contact.js";
+  import { Form2, Footer, Copyright } from "./Components/Contact.js";
 import NotFound from "./Components/NotFound";
 import Classes from "./Components/classes";
 import StudyAbroad from "./Components/newStudy.js";
@@ -33,19 +33,22 @@ function App() {
           <Route exact path="/">
             <Home />
             <GlobalStyle />
+            <EntranceExamCourse /> 
+            <PreviousYearSection />
+            <SkillDev />
+            <VirtualTuitionCourses /> 
+            <StudyAboardCourse /> 
             <IntroductionSection />
             <AboutSection />
-            {/*<EntranceExamCourse />   Put it where ever needed */}
-            {/*<SkillDev /> Put it where ever needed */}
-            {/* <VirtualTuitionCourses /> Put it where ever needed */}
-            {/*<StudyAboardCourse /> Put it where ever needed */}
-            {/*<PreviousYearSection /> Put it where ever needed */}
-            <Middle />
-            <Login />
-            {/* <Form2 />
-          <Footer /> 
-          <Copyright /> */}
+            <Middle /> 
+           <Form2 />
+           <Footer /> 
+           <Copyright /> 
+         
           </Route>
+          <Route exact path="/login">
+          <Login />
+            </Route>
            <Route exact path="/dashboard/:id">
            <Dashboard />
          </Route>
