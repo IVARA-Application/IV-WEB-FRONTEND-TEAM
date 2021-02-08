@@ -329,24 +329,24 @@
 }
 
 .girl {
-  animation: anime 1s infinite linear alternate;
+  animation: anime 0.75s infinite linear alternate;
 }
 
 .skill {
-  animation: anime 1.5s infinite linear alternate;
-}
-
-.vtc {
   animation: anime 1s infinite linear alternate;
 }
 
+.vtc {
+  animation: anime 0.75s infinite linear alternate;
+}
+
 .sac {
-  animation: anime 1.25s infinite linear alternate;
+  animation: anime 1s infinite linear alternate;
 }
 
 .girl1,
 .books {
-  animation: anime 1.25s infinite linear alternate;
+  animation: anime 0.75s infinite linear alternate 1s;
 }
 
 @keyframes anime {
