@@ -82,7 +82,7 @@ const Login = () => {
   return (
     <> 
       <div className="container-fluid login-container">
-        <form action="http://localhost:5000/users/auth/google">
+        <form action="https://ivara-app.herokuapp.com/users/auth/google">
           <div className="container login ">
             <h1 className="loginHeading">Login</h1>
             <h4 className="subHeading">Or Create a new account</h4>
