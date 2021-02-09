@@ -20,7 +20,9 @@ import Login from "./Components/Login";
 import Scholarship from "./Components/Scholarship";
 import NewsandBlogs from "./Components/NewsandBlogs";
 import Articles from "./Components/Articles";
-
+import DownloadETestSeriesPaper from "./Components/DownloadETestSeriesPaper";
+import DownloadPaper from "./Components/DownloadPaper";
+import EbookTestSeries from "./Components";
 import { AuthContext } from "./HOC/LoginHOC";
 
 function App() {
@@ -73,6 +75,15 @@ function App() {
             </Route>
             <Route exact path="/studyabroad">
               <StudyAbroad />
+            </Route>
+            <Route exact path="/downloadetest">
+              <DownloadETestSeriesPaper/>
+            </Route>
+            <Route exact path="/downloadpaper">
+              <DownloadPaper/>
+            </Route>
+            <Route exact path="/ebooktestseries">
+              <EbookTestSeries/>
             </Route>
             <Route exact path="/class4">
               <Classes />
