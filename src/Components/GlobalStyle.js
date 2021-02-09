@@ -9,92 +9,17 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     }
     html{
-    @media (max-width: 1894px){
-            .circle{
-            width: 28rem;
-            }
-            .skill,.vtc{
-            padding-top: 4rem;
-            }
+        @media (max-width: 414px){
+            font-size: 75%;
         }
-    @media (max-width: 1600px){
-            
-            font-size: 90%;
-            .sbtn{
-            letter-spacing: 4px;
-            }
-            .circle{
-                width: 28rem;
-            }
-            p{
-                letter-spacing: 5px;
-            }
-        }
-    @media (max-width: 1424px){
-            font-size: 80%;
-
-            p {
-                letter-spacing: 4px;
-            }
-
-            .sbtn{
-            letter-spacing: 3px;
-            }
-            .circle{
-            width: 30rem;
-            transform: translate(-50%, -50%);
-            }
-            .skill,.vtc{
-            padding-top: 4rem;
-            width: 80%;
-            }
-            .girl{
-                width: 25%;
-            }
-            .girl1,.books{
-                width: 80%;
-            }
-        }
-    @media (max-width: 1200px){
-        font-size: 70%;
-        .sbtn{
-            letter-spacing: 2px;
-            font-size: 1.2rem;
-        }
-        .circle{
-            height: 30rem;
-            width: 30rem;
-            transform: translate(-50%,-50%);
-            }
-            .skill,.vtc{
-            padding-top: 4rem;
-            width: 70%;
-            }
-            .girl1,.books{
-                width: 70%;
-            }
-            p{
-                letter-spacing: 4px;
-            }
-        }
-    @media (max-width: 1100px){
-
-        font-size: 60%;
-        p{
-            letter-spacing: 3px;
-        }
-
+    @media (max-width: 604px){
+        font-size: 85%;
     }
-        @media (max-width: 1010px){
-        font-size:50%;
-        p,h1{
-            letter-spacing: 0px;
-        }
+    @media (max-width: 800px){
+        font-size: 95%;
     }
     @media (max-width: 890px){
-        .circle{
-            opacity: 0;
-        }
+        font-size: 100%;
     }
 }
     

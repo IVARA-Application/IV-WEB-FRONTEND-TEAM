@@ -11,12 +11,10 @@ const SkillDev = () => {
       <div className="skill-con">
         <div className="skill-left">
           <p>
-            We believe in skills rather than mere <br /> knowledge. We dream of
-            Skill India; thus,
-            <br /> this initiative helps in overall skill
-            <br /> development of an individual. Our skill <br /> development
-            programs include 100+ <br /> Technical, Non-Technical, Management,
-            <br /> Sports and Activities courses.
+            We believe in skills rather than mere knowledge. We dream of Skill
+            India; thus, this initiative helps in overall skill development of
+            an individual. Our skill development programs include 100+
+            Technical, Non-Technical, Management, Sports and Activities courses.
           </p>
         </div>
         <div className="skill-right">

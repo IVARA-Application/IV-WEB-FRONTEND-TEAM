@@ -82,7 +82,7 @@ const Login = () => {
   return (
     <> 
       <div className="container-fluid login-container">
-        <form action="http://localhost:5000/users/auth/google">
+        <form action="https://ivara-app.herokuapp.com/users/auth/google">
           <div className="container login ">
             <h1 className="loginHeading">Login</h1>
             <h4 className="subHeading">Or Create a new account</h4>
@@ -99,8 +99,10 @@ const Login = () => {
                 aria-describedby="addon-wrapping"
               />
             </div>
+            <button className=" submitButton" type="submit">Login</button>
+            <button className="emailId  submitButton">Continue with Google</button>
             {/* <button className=" submitButton" type="submit">Login</button> */}
-            <button type="submit" className="emailId  submitButton" >Continue with Google</button>
+            {/* <button type="submit" className="emailId  submitButton" >Continue with Google</button> */}
             {/* <GoogleLogin
              clientId="604975047284-im9me9431a4m8pae0e8qmmn5a89dc1rs.apps.googleusercontent.com"
              buttonText="Login with google"
