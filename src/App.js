@@ -27,7 +27,7 @@ function App() {
           <GlobalStyle />
           <IntroductionSection />
           <AboutSection />
-          {/* <EntranceExamCourse /> */}
+          <EntranceExamCourse />
           {/* Put it where ever needed */}
           {/* <SkillDev /> Put it where ever needed */}
           <Middle /> 

@@ -4,6 +4,7 @@
     background: linear-gradient(248.66deg, #4DA0B0 26.59%, #4E5DE1 97.92%);
     color: white;
     padding: 3% 7%;
+    padding-bottom: 60px;
 }
 .img-1 {
   height: 200px;
@@ -89,3 +90,21 @@
     width: 75%;
   }
   }
+  @media (max-width: 710px) {
+    .big-heading{
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 33px;
+      letter-spacing: 0.025em;
+      margin:7px;
+    }
+    .img-1{
+      width: 75%;
+      margin-bottom: 10px;
+      
+    }
+    .img-2{
+      width: 75%;
+    }
+  }
+ 

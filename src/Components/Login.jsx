@@ -34,7 +34,7 @@ const Login = () => {
               />
             </div>
             <button className=" submitButton" type="submit">Login</button>
-            <button className="emailId  submitButton">Continue with Google</button>
+            <button className="emailId blktn submitButton">Continue with Google</button>
           </div>
         </form>
         <p className="contact">Having trouble? Please contact help@iventorsinitiatives.com for further support.</p>
