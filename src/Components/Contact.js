@@ -12,7 +12,7 @@ const Form2 = () => {
 
   const [name,setName] = useState("");
   const [email,setEmail] = useState("");
-  const [query,setQuery] = useState("");
+  const [query,setQuery] = useState();
 
   const onSubmit = () =>{
     const details = {"name": name, "email": email, "query": query}

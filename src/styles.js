@@ -1,11 +1,338 @@
 import styled from "styled-components";
 
+//Entrance Section
+
+export const Entrance = styled.div`
+  font-family: "Poppins", sans-serif;
+  h1 {
+    font-size: 2.25rem;
+    color: #4e5de1;
+    padding-top: 6rem;
+    letter-spacing: 4px;
+  }
+  P {
+    color: #6f6e6d;
+    font-size: 1.25rem;
+    padding: 4rem 0rem 2.5rem 0rem;
+    letter-spacing: 3px;
+  }
+  text-align: center;
+  align-items: center;
+  .girl {
+    padding-top: 11rem;
+    align-self: center;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 900px) {
+    .girl {
+      width: 40%;
+    }
+    p {
+      letter-spacing: 1px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    p {
+      padding: 0rem 2rem;
+    }
+    .girl {
+      padding-top: 6rem;
+      width: 40%;
+    }
+  }
+`;
+
+//Previous Year Papers
+export const PypContainer = styled.div`
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2.25rem;
+    color: #4e5de1;
+    padding-top: 6rem;
+    letter-spacing: 4px;
+  }
+  P {
+    color: #6f6e6d;
+    font-size: 1.25rem;
+    padding: 2rem 0rem 1rem 0rem;
+    letter-spacing: 3px;
+  }
+  .img {
+    padding: 0rem 8rem;
+    .girl1 {
+      border-radius: 5px;
+    }
+  }
+  .description {
+    padding: 3rem 10rem;
+  }
+  @media (max-width: 414px) {
+    .description {
+      padding: 0rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    text-align: center;
+    align-items: center;
+    padding: 0rem;
+    .img {
+      padding: 0rem 1rem;
+    }
+    h1,
+    p {
+      letter-spacing: 3px;
+    }
+    .description {
+      padding: 0rem;
+    }
+    h1 {
+      letter-spacing: 4px;
+      padding-top: 4rem;
+    }
+    p {
+      padding: 1rem 4rem;
+      letter-spacing: 2px;
+    }
+    .girl1,
+    .books {
+      padding-top: 6rem;
+      width: 40%;
+    }
+    .books {
+      padding-top: 4rem;
+    }
+  }
+  @media (max-width: 1122px) {
+    h1 {
+      letter-spacing: 4px;
+    }
+
+    p {
+      letter-spacing: 2px;
+    }
+  }
+  @media (max-width: 1200px) {
+    display: block;
+    P {
+      padding: 2rem 4rem;
+    }
+  }
+`;
+
+// Skill Section
+
+export const SkillContainer = styled.div`
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  h1 {
+    font-size: 2.25rem;
+    color: #4e5de1;
+    padding-top: 6rem;
+    letter-spacing: 4px;
+  }
+  P {
+    color: #6f6e6d;
+    font-size: 1.25rem;
+    padding: 4rem 0rem 2.5rem 0rem;
+    letter-spacing: 3px;
+  }
+  .desc {
+    align-items: center;
+  }
+  .skill-con {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+  }
+  .skill-left {
+    margin: 0rem 8rem;
+  }
+  .skill-right {
+    text-align: center;
+    margin: 0rem 10rem;
+  }
+  .skill img {
+    width: 100%;
+  }
+  @media (max-width: 414px) {
+    .skill-left p {
+      padding: 1rem 0rem;
+    }
+    .skill {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .skill-right {
+      margin: 0rem;
+    }
+    .skill-left {
+      margin: 0rem;
+    }
+
+    h1,
+    p {
+      letter-spacing: 2px;
+      padding-left: 1rem;
+    }
+    .skill-con {
+      display: block;
+      p {
+        text-align: center;
+      }
+    }
+    img {
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 1740px) {
+    .skill-left {
+      margin: 0rem 4rem;
+    }
+    .skill-right {
+      text-align: center;
+      margin: 0rem 5rem;
+    }
+  }
+`;
+
+//Virtual tuition Section
+
+export const VtcMain = styled(Entrance)`
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  h1 {
+    font-size: 2.25rem;
+    color: #4e5de1;
+    padding-top: 6rem;
+    letter-spacing: 4px;
+  }
+  P {
+    color: #6f6e6d;
+    font-size: 1.25rem;
+    padding: 2rem;
+    letter-spacing: 3px;
+  }
+  .desc {
+    align-items: center;
+  }
+  .vtc-con {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+  }
+  .desc {
+    margin-bottom: 6rem;
+  }
+  .vtc-left {
+    margin: 0rem 10rem;
+    text-align: center;
+  }
+  .vtc-right {
+    margin: 0rem 4rem;
+  }
+  .vtc img {
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  @media (max-width: 414px) {
+    .vtc {
+      width: 100%;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 1244px) {
+    .vtc-left {
+      margin: 0rem;
+    }
+    .vtc-right {
+      margin: 0rem;
+    }
+    .vtc-con {
+      display: block;
+      p {
+        text-align: center;
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  @media (max-width: 1424px) {
+    .vtc-left {
+      margin: 0rem;
+      padding: 0rem;
+    }
+    .vtc-right {
+      margin: 0rem;
+      padding: 0rem;
+    }
+    p {
+      padding: 0rem;
+    }
+  }
+
+  @media (max-width: 1600px) {
+    .vtc-left {
+      margin: 0rem 5rem;
+      text-align: center;
+    }
+    .vtc-right {
+      margin: 0rem 2rem;
+      padding: 0rem 0rem;
+    }
+  }
+`;
+//Study Aboard Section
+
+export const SacMain = styled(Entrance)`
+  h1 {
+    margin-bottom: 4rem;
+  }
+  p {
+    margin: 0rem 16rem;
+  }
+  @media (max-width: 900px) {
+    p {
+      letter-spacing: 0px;
+      padding: 0rem 2rem;
+      margin: 0rem;
+    }
+  }
+  @media (max-width: 414px) {
+    img {
+      width: 75%;
+    }
+  }
+`;
+
 //Introduciton Section
 
 export const Intro = styled.div`
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
 `;
 
 export const Cards = styled.div`
@@ -13,6 +340,7 @@ export const Cards = styled.div`
   margin: auto;
   font-family: "Roboto", sans-serif;
   display: flex;
+  flex-wrap: wrap;
   background: white;
   margin-top: 10rem;
   padding: 0rem 2rem;
@@ -52,24 +380,29 @@ export const Cards = styled.div`
   .third {
     animation: anime 0.75s infinite linear alternate 0.3s;
   }
+  @media (max-width: 900px) {
+    h1 {
+      letter-spacing: 2px;
+    }
+    p {
+      letter-spacing: 1px;
+    }
+  }
 `;
 
 export const ArlCard = styled.div`
   padding: 0rem 2rem;
   margin: 0 1rem;
-  /* min-height: 50vh; */
   text-align: center;
 `;
 export const EepCard = styled.div`
   padding: 0rem 2rem;
   margin: 0 1rem;
-  min-height: 50vh;
   text-align: center;
 `;
 export const DoubtsCard = styled.div`
   padding: 0rem 2rem;
   margin: 0 1rem;
-  min-height: 50vh;
   text-align: center;
 `;
 
@@ -78,19 +411,19 @@ export const DoubtsCard = styled.div`
 export const Container = styled.div`
   font-family: "Poppins", sans-serif;
   display: flex;
-
-  width: 90%;
-  margin: auto;
   flex-wrap: wrap;
+  @media (max-width: 1280px) {
+    display: block;
+  }
 `;
 
 export const LeftSide = styled.div`
   display: flex;
-  width: 50%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex: 0.5;
   h1 {
     color: #4e5de1;
     font-weight: 500;
@@ -108,17 +441,35 @@ export const LeftSide = styled.div`
     background-blend-mode: pass-through;
     letter-spacing: 6px;
   }
+  @media (max-width: 414px) {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    h1,
+    p {
+      letter-spacing: 0px;
+    }
+  }
+  @media (max-width: 900px) {
+    h1 {
+      letter-spacing: 4px;
+    }
+    p {
+      letter-spacing: 3px;
+    }
+  }
 `;
 
 export const RightSide = styled.div`
-  width: 50%;
   position: relative;
-  overflow: hidden;
+  flex: 0.5;
   .circle {
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     top: 20%;
-    scale: 1.25;
     left: 21%;
     transform: translate(-50%, -50%);
     transform-origin: center;
@@ -132,6 +483,25 @@ export const RightSide = styled.div`
       }
     }
   }
+  @media (max-width: 1424px) {
+    .circle {
+      top: 15%;
+      left: 15%;
+      scale: 0.9;
+    }
+  }
+  @media (max-width: 1280px) {
+    .circle {
+      top: 10%;
+      left: 30%;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .circle {
+      display: none;
+    }
+  }
 `;
 
 export const AboutCards = styled.div`
@@ -141,6 +511,7 @@ export const AboutCards = styled.div`
   letter-spacing: 4px;
   justify-content: center;
   margin: 6rem 0rem;
+  padding-top: 5rem;
   text-align: center;
   p {
     margin: 0rem 0rem 2rem 0rem;
@@ -149,6 +520,12 @@ export const AboutCards = styled.div`
   }
   span {
     color: #4e5de1;
+  }
+  @media (max-width: 414px) {
+    h1,
+    p {
+      letter-spacing: 0px;
+    }
   }
 `;
 
@@ -159,61 +536,8 @@ export const Card = styled.div`
     align-items: center;
     justify-content: center;
   }
-`;
 
-//Entrance Section
-
-export const Entrance = styled.div`
-  font-family: "Poppins", sans-serif;
-  h1 {
-    font-size: 2.25rem;
-    color: #4e5de1;
-    padding-top: 6rem;
-    letter-spacing: 4px;
-  }
-  P {
-    color: #6f6e6d;
-    font-size: 1.25rem;
-    padding: 4rem 0rem 2.5rem 0rem;
-    letter-spacing: 3px;
-  }
-  text-align: center;
-  align-items: center;
-  .girl {
-    padding-top: 11rem;
-    align-self: center;
-    border-radius: 10px;
-  }
-`;
-
-// Skill Section
-
-export const SkillContainer = styled.div`
-  width: 100%;
-  text-align: center;
-  h1 {
-    font-size: 2.25rem;
-    color: #4e5de1;
-    padding-top: 6rem;
-    letter-spacing: 4px;
-  }
-  P {
-    color: #6f6e6d;
-    font-size: 1.25rem;
-    padding: 4rem 0rem 2.5rem 0rem;
-    letter-spacing: 3px;
-  }
-  .desc {
-    align-items: center;
-  }
-  .skill-con {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    align-items: center;
-  }
-  .skill-left {
-    width: 50%;
-    margin-left: 6rem;
+  @media (max-width: 1280px) {
+    flex-basis: 30rem;
   }
 `;
