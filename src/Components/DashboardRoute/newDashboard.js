@@ -1,71 +1,28 @@
 import React,{useContext,useEffect} from 'react';
-import svg1 from './images/entrance.svg';
-import svg2 from './images/study.svg';
-import svg3 from './images/skill.svg';
-import svg4 from './images/previous.svg';
-import svg5 from './images/virtualtuition.svg';
-import svg6 from './images/ebook.svg';
-import svg7 from './images/doubts.svg';
+import {withRouter} from 'react-router-dom';
+
+import svg1 from '../images/entrance.svg';
+import svg2 from '../images/study.svg';
+import svg3 from '../images/skill.svg';
+import svg4 from '../images/previous.svg';
+import svg5 from '../images/virtualtuition.svg';
+import svg6 from '../images/ebook.svg';
+import svg7 from '../images/doubts.svg';
 import "./Dashboard.css";
 import Card from 'react-bootstrap/Card';
-import {useParams}  from 'react-router-dom';
-import axios from 'axios';
-import {baseUrl} from '../constants'
 
 
-import { AuthContext } from '../HOC/LoginHOC';
+
+import { AuthContext } from '../../HOC/LoginHOC';
 
 
-const Dashboard =()=>
+const Dashboard =({history})=>
 {
     const {
         user,
-        setAuth,
-        setUser,
       } = useContext(AuthContext);
-    const {id} = useParams();
-    console.log(id)
 
-    useEffect(()=>{
-         const user = axios
-        .put(baseUrl + `users/${id}`)
-        .then(
-            (response) => {
-                console.log(response);
-              if (response.status === 200) {
-                return response;
-              } else {
-                var error = new Error(
-                  "Error " + response.status + ": " + response.statusText
-                );
-                error.response = response;
-                throw error;
-              }
-            },
-            (error) => {
-              throw error;
-            }
-          )
-          .then((response) =>  {
-          setUser(response.data);
-             setAuth(true);
-            })
-        //   .then((response) => {
-        //       console.log(response.data.firstname);
-        //     if (response.statusText === "OK") {
-        //       setUser(response.data);
-        //       setAuth(true);
-        //       console.log(user.firstname)
-        //     } else {
-        //       var error = new Error("Error " + response.status);
-        //       error.response = response;
-        //       throw error;
-        //     }
-        //   })
-          .catch((err)=>
-              console.log(err)
-          )
-    },[])
+    
 
     return (
         <div className="container-dashboard">
@@ -139,4 +96,4 @@ const Dashboard =()=>
         </div>
     );
 };
-export default Dashboard;
+export default withRouter(Dashboard);

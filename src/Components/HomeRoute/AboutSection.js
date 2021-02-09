@@ -1,14 +1,14 @@
 //Import Icons
 
-import student from "../img/student.svg";
-import program from "../img/program.svg";
-import events from "../img/events.svg";
-import teacher from "../img/teacher.svg";
-import Circles from "../img/Circles.png";
+import student from "../../img/student.svg";
+import program from "../../img/program.svg";
+import events from "../../img/events.svg";
+import teacher from "../../img/teacher.svg";
+import Circles from "../../img/Circles.png";
 import React from "react";
-import { Container, LeftSide, RightSide, AboutCards, Card } from "../styles";
+import { Container, LeftSide, RightSide, AboutCards, Card } from "../../styles";
 
-const AboutSection = () => {
+const AboutSection = ({history}) => {
   return (
     <Container>
       <LeftSide>
@@ -20,7 +20,7 @@ const AboutSection = () => {
           clearing sessions
         </p>
         <a href="#">
-          <button className="sbtn">Start Learning</button>
+          <button className="sbtn"  onClick={()=>{history.replace("/login")}}>Start Learning</button>
         </a>
       </LeftSide>
       <RightSide>

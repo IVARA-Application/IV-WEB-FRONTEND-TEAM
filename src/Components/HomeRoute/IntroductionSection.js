@@ -1,8 +1,8 @@
-import card1 from "../img/card1.png";
-import card2 from "../img/card2.png";
-import card3 from "../img/card3.png";
-import Arrow from "../img/arrow.svg";
-import { Intro, Cards, ArlCard, EepCard, DoubtsCard } from "../styles";
+import card1 from "../../img/card1.png";
+import card2 from "../../img/card2.png";
+import card3 from "../../img/card3.png";
+import Arrow from "../../img/arrow.svg";
+import { Intro, Cards, ArlCard, EepCard, DoubtsCard } from "../../styles";
 import React from "react";
 const IntroductionSection = () => {
   return (

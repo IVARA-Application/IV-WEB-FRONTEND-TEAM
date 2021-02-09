@@ -1,6 +1,6 @@
 import React from "react";
-import svg3 from "./images/girl.jpg";
-import svg4 from "./images/childrens.jpg";
+import svg3 from "../images/girl.jpg";
+import svg4 from "../images/childrens.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Middle.css';
 const SectionFour = () => {

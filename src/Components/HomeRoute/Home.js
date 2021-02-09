@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
-import svg1 from "./images/mobileBoy.svg";
-import svg2 from "./images/bird.svg";
+import svg1 from "../images/mobileBoy.svg";
+import svg2 from "../images/bird.svg";
 
 
 const Home = () => {
