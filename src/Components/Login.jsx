@@ -3,77 +3,15 @@ import "./Login.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
-import {baseUrl} from "../constants/index";
-import axios from "axios";
-
-import GoogleLogin from 'react-google-login';
-import { login } from '../api/googleAuth';
-
-import { AuthContext } from '../HOC/LoginHOC';
-
 const Login = () => {
-  const {
-    setAuth,
-    setUser,
-    setToken
-  } = useContext(AuthContext);
+
 
    const [number, setnumber] = useState("");
 
 
-  //  const responseGoogle = async (authResult) => {
-  //   try {
-  //     if (authResult['code']) {
-  //       const result = await login(authResult['code']);
-  //       console.log(authResult);
-  //       // props.login(result);
-  //     } else {
-  //       throw new Error(authResult);
-  //     }
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  // };
 
-   const onGoogle = () =>{
-    axios
-    .get(baseUrl + "users/auth/google")
-    
-    .then(
-      (response) => {
-        if (response.ok) {
-          return response;
-        } else {
-          var error = new Error(
-            "Error " + response.status + ": " + response.statusText
-          );
-          error.response = response;
-          throw error;
-        }
-      },
-      (error) => {
-        throw error;
-      }
-    )
-    .then((response) => response.json())
-    .then((response) => {
-      if (response.success) {
-        localStorage.setItem("token", response.token);
-        setUser(response.user);
-        setAuth(true);
-        setToken(response.token);
-      } else {
-        var error = new Error("Error " + response.status);
-        error.response = response;
-        throw error;
-      }
-    })
-   }
+   
 
-    const onSubmits=(event)=>{
-        event.preventDefault();
-        setnumber(number);
-    }
   
     const inputEvent=(event)=>{
         setnumber(event.target.value);
@@ -100,18 +38,7 @@ const Login = () => {
               />
             </div>
             <button className=" submitButton" type="submit">Login</button>
-            <button className="emailId  submitButton">Continue with Google</button>
-            {/* <button className=" submitButton" type="submit">Login</button> */}
-            {/* <button type="submit" className="emailId  submitButton" >Continue with Google</button> */}
-            {/* <GoogleLogin
-             clientId="604975047284-im9me9431a4m8pae0e8qmmn5a89dc1rs.apps.googleusercontent.com"
-             buttonText="Login with google"
-             responseType="code" 
-             redirectUri="postmessage"
-             onSuccess={responseGoogle}
-             onFailure={responseGoogle}
-             cookiePolicy={'single_host_origin'} */}
-            {/* /> */}
+            <button className="emailId  submitButton" type="submit">Continue with Google</button>
           </div>
         </form>
         <p className="contact">Having trouble? Please contact help@iventorsinitiatives.com for further support.</p>

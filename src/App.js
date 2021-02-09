@@ -30,24 +30,6 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
-        <Home />
-
-            <GlobalStyle />	           
-            <EntranceExamCourse /> 
-            <PreviousYearSection />
-            <SkillDev />
-            <VirtualTuitionCourses /> 
-            <StudyAboardCourse /> 
-            <IntroductionSection />	          
-            <AboutSection />	           
-            <Middle /> 
-            {/* <Form2 />
-            <Footer /> 
-           <Copyright />  */}
-          
-          
-        </Route>
         {!auth ? (
           <>
             <Route exact path="/">
@@ -72,30 +54,7 @@ function App() {
             <Route exact path="/dashboard/:id">
               <Dashboard />
             </Route>
-            <Route exact path="/scholarship">
-              <Scholarship />
-            </Route>
-            <Route exact path="/newsandblogs">
-              <NewsandBlogs />
-            </Route>
-            <Route exact path="/articles">
-              <Articles />
-            </Route>
-            <Route exact path="/studyabroad">
-              <StudyAbroad />
-            </Route>
-            <Route exact path="/downloadetest">
-              <DownloadETestSeriesPaper/>
-            </Route>
-            <Route exact path="/downloadpaper">
-              <DownloadPaper/>
-            </Route>
-            {/* <Route exact path="/ebooktestseries">
-              <EbookTestSeries/>
-            </Route> */}
-            <Route exact path="/class4">
-              <Classes />
-            </Route>
+
           </>
         ) : (
             <>
