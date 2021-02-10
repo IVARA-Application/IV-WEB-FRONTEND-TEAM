@@ -1,0 +1,196 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  display:flex;
+  background-color: white;
+  font-size:20px;
+  width:150px;
+  height:40px;
+  color:#4E5DE1;
+}
+
+
+ul{
+  list-style-type:none;
+  display:flex;
+  color: #4E5DE1;
+  font-size: 30px;
+}
+
+li{
+  padding:20px;
+}
+
+right{
+  padding-left: 80px;
+}
+
+.courses .l{
+  margin:80px 0px;
+} 
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* .exams{
+  padding-bottom:345px;
+} */
+
+img {
+  border-radius: 5px 5px 0 0;
+  width:150px;
+  height:150px;
+margin: 20px -35px;
+display:flex;
+float:left;
+}
+
+
+body{
+background: #F2F2F2;
+}
+
+.exams .rectangle2{
+font-size: 20px;
+}
+
+header{
+  display:flex;
+}
+
+h1{
+  color: #4E5DE1;
+  font-size:45px;
+}
+
+.rectangle2 h1{
+  margin-top:-5px;
+}
+
+
+h2{
+  color: #818181;
+  font-size:px;
+}
+
+m{
+  display:flex;
+}
+
+m .card{
+  margin:10px 60px 0px;
+}
+
+
+h4{
+  text-align:center;
+}
+
+.exams p span{
+  font-size:28px;
+  color: #818181;
+}
+
+body span .card{
+width:500px;
+height:150px;
+}
+
+
+/* Rectangle 13 */
+.rectangle{
+  position: absolute;
+  width: 416px;
+  height:800px;
+  left: 0px;
+  margin-top:-45px;
+  background: rgba(16, 90, 246, 0.67);
+  color:white;
+  text-align:center;
+}
+
+.physics .rectangle2{
+  height:750px;
+}
+.rectangle2{
+  position: relative;
+  left: 416px;
+  top:0px;
+  height:800px;
+  margin-top:20px;
+  padding:1px 100px;;
+  }
+
+  h3{
+    color:white;
+  }
+
+  /* Rectangle 39 */
+.r{
+position: relative;
+width: 236px;
+height: 56px;
+left: 0px;
+top: 20px;
+margin: 10px 0px;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+}
+
+/* Rectangle 40 */
+.l{
+position: relative;
+width: 236px;
+height: 56px;
+left: 182px;
+margin: 10px 0px;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+top:20px;
+}
+
+.tuition{
+  padding-top:100px;
+}
+
+.tuition .rectangle{
+  margin-top:25px;
+}
+
+.tuition m{
+  padding:30px 40px;
+}
+
+.container{
+  margin: -20px 35px;
+}
+.l m{
+  margin-top:20px;
+}
+
+.physics m{
+display:block;
+margin-left:150px;
+}
+
+.container span p{
+  text-align:right;
+}
+
+/* Rectangle 39 */
+.c{
+position: relative;
+width: 236px;
+height: 56px;
+left: 35px;
+top: 86px;
+padding:5px 5px;
+margin:5px 5px;
+text-align:center;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+}
+
+

@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from "react
 
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-import {baseUrl} from "../constants/index";
+import {baseUrl} from "../../constants/index";
 import axios from "axios";
 
 const Form2 = () => {
