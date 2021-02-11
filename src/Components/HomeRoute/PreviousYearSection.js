@@ -1,6 +1,6 @@
 import React from "react";
 import girl from "../../img/entrance.png";
-import arrow from "../../img/arrow.png";
+import arrow from "../../img/Arrow2.png";
 import books from "../../img/books.png";
 import { PypContainer } from "../../styles";
 
@@ -17,7 +17,7 @@ const PreviousYearSection = () => {
             We offer a wide range of previous year papers and sample papers for
             classes 4-12
           </p>
-          <img src={arrow} alt="" />
+          <img className="arrow" src={arrow} alt="" />
         </div>
       </PypContainer>
       <PypContainer>
@@ -30,7 +30,7 @@ const PreviousYearSection = () => {
             We have a vast range of E-books and E-test series for all subjects
             of classes 4-12
           </p>
-          <img src={arrow} alt="" />
+          <img className="arrow" src={arrow} alt="" />
         </div>
       </PypContainer>
     </div>

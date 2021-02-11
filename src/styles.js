@@ -46,15 +46,13 @@ export const Entrance = styled.div`
 
 //Previous Year Papers
 export const PypContainer = styled.div`
-  width: 90%;
-  margin: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-
+  padding-bottom: 4rem;
+  background: #a1aaf6;
   h1 {
     font-size: 2.25rem;
     color: #4e5de1;
@@ -62,12 +60,12 @@ export const PypContainer = styled.div`
     letter-spacing: 4px;
   }
   P {
-    color: #6f6e6d;
+    color: #e7e8ec;
     font-size: 1.25rem;
     padding: 2rem 0rem 1rem 0rem;
     letter-spacing: 3px;
   }
-  .img {
+  img {
     padding: 0rem 8rem;
     .girl1 {
       border-radius: 5px;
@@ -125,7 +123,7 @@ export const PypContainer = styled.div`
   @media (max-width: 1200px) {
     display: block;
     P {
-      padding: 2rem 4rem;
+      padding: 2rem 6rem;
     }
   }
 `;
@@ -164,14 +162,11 @@ export const SkillContainer = styled.div`
     text-align: center;
     margin: 0rem 10rem;
   }
-  .skill img {
-    width: 100%;
-  }
   @media (max-width: 414px) {
     .skill-left p {
       padding: 1rem 0rem;
     }
-    .skill {
+    .skill img {
       width: 100%;
     }
   }
@@ -214,9 +209,10 @@ export const SkillContainer = styled.div`
 //Virtual tuition Section
 
 export const VtcMain = styled(Entrance)`
-  width: 90%;
-  margin: auto;
+  width: 100%;
   text-align: center;
+  background: #a1aaf6;
+
   h1 {
     font-size: 2.25rem;
     color: #4e5de1;
@@ -224,7 +220,7 @@ export const VtcMain = styled(Entrance)`
     letter-spacing: 4px;
   }
   P {
-    color: #6f6e6d;
+    color: #e7e8ec;
     font-size: 1.25rem;
     padding: 2rem;
     letter-spacing: 3px;
@@ -243,18 +239,13 @@ export const VtcMain = styled(Entrance)`
   }
   .vtc-left {
     margin: 0rem 10rem;
-    text-align: center;
   }
   .vtc-right {
     margin: 0rem 4rem;
   }
-  .vtc img {
-    border-radius: 5px;
-    width: 100%;
-  }
 
-  @media (max-width: 414px) {
-    .vtc {
+  @media (max-width: 600px) {
+    .vtc-left img {
       width: 100%;
     }
     p {
@@ -321,7 +312,7 @@ export const SacMain = styled(Entrance)`
       margin: 0rem;
     }
   }
-  @media (max-width: 414px) {
+  @media (max-width: 600px) {
     img {
       width: 75%;
     }
@@ -333,11 +324,11 @@ export const SacMain = styled(Entrance)`
 export const Intro = styled.div`
   width: 100%;
   display: flex;
+  background: #a1aaf6;
 `;
 
 export const Cards = styled.div`
   width: 100%;
-  margin: auto;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-wrap: wrap;
@@ -349,6 +340,7 @@ export const Cards = styled.div`
   letter-spacing: 5px;
   -webkit-letter-spacing: 5px;
   font-weight: 400;
+  background: #a1aaf6;
   .arrow {
     margin: 3rem 0rem;
   }
@@ -359,7 +351,7 @@ export const Cards = styled.div`
   }
   .short-desc {
     font-size: 1.2rem;
-    color: #999;
+    color: #e7e8ec;
   }
   .icon img {
     border-radius: 12px;
