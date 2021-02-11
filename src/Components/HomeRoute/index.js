@@ -11,7 +11,8 @@ import StudyAboardCourse from "./StudyAboardCourse";
 import IntroductionSection from "./IntroductionSection";
 import AboutSection from "./AboutSection";
 import Middle from "./Middle";
-import {Form2,Footer,Copyright} from "./Contact";
+import Form from "./Form"
+// import {Form2,Footer,Copyright} from "./Contact";
 
 function HomeComp({history}){
 return(<>
@@ -25,9 +26,10 @@ return(<>
               <IntroductionSection />
               <AboutSection history={history} />
               <Middle />
-              <Form2 />
+              <Form />
+              {/* <Form2 />
               <Footer/>
-              <Copyright />
+              <Copyright /> */}
 </>)
 }
 
