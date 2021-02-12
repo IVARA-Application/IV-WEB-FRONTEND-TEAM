@@ -136,8 +136,7 @@ export const PypContainer = styled.div`
 // Skill Section
 
 export const SkillContainer = styled.div`
-  width: 90%;
-  margin: auto;
+  width: 100%;
   text-align: center;
   h1 {
     font-size: 2.25rem;
@@ -160,9 +159,6 @@ export const SkillContainer = styled.div`
     text-align: left;
     align-items: center;
   }
-  /* .skill {
-    width: 100%;
-  } */
   .skill-left {
     margin: 0rem 8rem;
   }
@@ -178,9 +174,12 @@ export const SkillContainer = styled.div`
     .skill-right {
       margin: 0rem;
     }
-    /* .skill {
+  }
+
+  @media (max-width: 900px) {
+    .skill {
       width: 100%;
-    } */
+    }
   }
 
   @media (max-width: 1200px) {
@@ -441,12 +440,14 @@ export const LeftSide = styled.div`
     background-blend-mode: pass-through;
     letter-spacing: 6px;
   }
+
   @media (max-width: 414px) {
     h1 {
-      font-size: 2rem;
+      font-size: 1rem;
+      padding-top: 0.6rem;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
     }
     h1,
     p {
@@ -456,9 +457,12 @@ export const LeftSide = styled.div`
   @media (max-width: 900px) {
     h1 {
       letter-spacing: 4px;
+      font-size: 2.2rem;
+      padding-top: 1rem;
     }
     p {
       letter-spacing: 3px;
+      font-size: 1.2rem;
     }
   }
 `;
