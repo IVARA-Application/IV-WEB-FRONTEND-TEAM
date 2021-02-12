@@ -78,6 +78,11 @@ export const PypContainer = styled.div`
     .description {
       padding: 0rem;
     }
+    .girl1,
+    .books {
+      padding-top: 6rem;
+      width: 40%;
+    }
   }
 
   @media (max-width: 900px) {
@@ -105,7 +110,7 @@ export const PypContainer = styled.div`
     .girl1,
     .books {
       padding-top: 6rem;
-      width: 40%;
+      width: 100%;
     }
     .books {
       padding-top: 4rem;
@@ -155,6 +160,9 @@ export const SkillContainer = styled.div`
     text-align: left;
     align-items: center;
   }
+  /* .skill {
+    width: 100%;
+  } */
   .skill-left {
     margin: 0rem 8rem;
   }
@@ -163,12 +171,16 @@ export const SkillContainer = styled.div`
     margin: 0rem 10rem;
   }
   @media (max-width: 414px) {
-    .skill-left p {
+    .skill-left {
       padding: 1rem 0rem;
+      margin: 0rem;
     }
-    .skill img {
+    .skill-right {
+      margin: 0rem;
+    }
+    /* .skill {
       width: 100%;
-    }
+    } */
   }
 
   @media (max-width: 1200px) {
@@ -182,16 +194,12 @@ export const SkillContainer = styled.div`
     h1,
     p {
       letter-spacing: 2px;
-      padding-left: 1rem;
     }
     .skill-con {
       display: block;
       p {
         text-align: center;
       }
-    }
-    img {
-      width: 40%;
     }
   }
 
@@ -356,7 +364,7 @@ export const Cards = styled.div`
   .icon img {
     border-radius: 12px;
     box-shadow: -5px 15px 30px 0px rgba(0, 0, 0, 0.25);
-    animation: anime 0.75s infinite linear alternate 0.1s;
+    animation: anime 1s infinite linear alternate 0.2s;
     @keyframes anime {
       from {
         transform: translateY(0px);
@@ -367,10 +375,10 @@ export const Cards = styled.div`
     }
   }
   .second {
-    animation: anime 0.75s infinite linear alternate 0.2s;
+    animation: anime 1s infinite linear alternate 0.4s;
   }
   .third {
-    animation: anime 0.75s infinite linear alternate 0.3s;
+    animation: anime 1s infinite linear alternate 0.6s;
   }
   @media (max-width: 900px) {
     h1 {
