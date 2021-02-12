@@ -12,7 +12,7 @@ import IntroductionSection from "./IntroductionSection";
 import AboutSection from "./AboutSection";
 import Middle from "./Middle";
 import Form from "./Form"
-// import {Form2,Footer,Copyright} from "./Contact";
+import {Footer,Copyright} from "./Contact";
 
 function HomeComp({history}){
 return(<>
@@ -27,9 +27,8 @@ return(<>
               <AboutSection history={history} />
               <Middle />
               <Form />
-              {/* <Form2 />
               <Footer/>
-              <Copyright /> */}
+              <Copyright />
 </>)
 }
 
