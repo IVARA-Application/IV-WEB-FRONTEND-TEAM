@@ -29,7 +29,7 @@ const Home = () => {
                 </button></div>
             </div>
             <div className="col-lg-6 d-none d-xs-none d-sm-none d-md-none d-lg-block" style={{overflow:"none"}}>
-              <img src={svg1}  style={{height:"95%",width:"95%",marginLeft:"280px"}} />       </div>
+              <img src={svg1}  style={{height:"95%",width:"95%",marginLeft:"220px"}} />       </div>
           </div>
           </div>
       </section>

@@ -24,7 +24,7 @@ return(<>
               <VirtualTuitionCourses />
               <StudyAboardCourse />
               <IntroductionSection />
-              <AboutSection history={history} />
+              {/* <AboutSection history={history} /> */}
               <Middle />
               <Form />
               <Footer/>
