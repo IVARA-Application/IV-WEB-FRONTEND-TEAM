@@ -171,7 +171,7 @@ footer p{
 }
 @media (max-width: 768px) {   
   footer p{
-  padding:10px 75px;
+  padding:10px 45px;
   font-size:16px;
   text-align:center;
 } 
@@ -193,3 +193,11 @@ footer p{
   font-size: 18px;
   text-align: left;
 }}
+
+@media (max-width: 567px) {   
+  footer p{
+  padding:10px 35px;
+  font-size:16px;
+  text-align:center;
+} 
+}
