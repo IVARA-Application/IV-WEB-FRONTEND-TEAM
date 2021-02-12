@@ -1,5 +1,9 @@
 import React,{useContext,useEffect} from 'react';
-import {withRouter} from 'react-router-dom';
+import {withRouter, useParams} from 'react-router-dom'
+
+import axios from 'axios'
+import {baseUrl} from '../../constants'
+
 
 import svg1 from '../images/entrance.svg';
 import svg2 from '../images/study.svg';
@@ -19,9 +23,46 @@ import { AuthContext } from '../../HOC/LoginHOC';
 const Dashboard =({history})=>
 {
     const {
-        user,
+        setAuth,
+        setUser,
+        user
       } = useContext(AuthContext);
 
+      const {id} = useParams();
+
+    useEffect(()=>{
+        const fetchdata = () => (axios
+        .put(baseUrl + `users/${id}`)
+        .then(
+            (response) => {
+              if (response.status === 200) {
+                return response;
+              } else {
+                var error = new Error(
+                  "Error " + response.status + ": " + response.statusText
+                );
+                error.response = response;
+                throw error;
+              }
+            },
+            (error) => {
+              throw error;
+            }
+          )
+          .then((response) =>  {
+             setUser(response.data);
+             setAuth(true);
+             history.replace("/dashboard")
+            })
+          .catch((err)=>{
+              console.log(err)
+              history.replace("/")}
+          ))
+
+          const nofetchdata = () => (<></>)
+
+          {id?fetchdata():nofetchdata()}
+    },[])
     
 
     return (

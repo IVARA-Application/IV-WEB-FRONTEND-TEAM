@@ -4,7 +4,7 @@ import NotFound from "./Components/NotFound";
 import HomeComp from "./Components/HomeRoute";
 import LoginComp from "./Components/LoginRoute";
 import DashboardComp from "./Components/DashboardRoute";
-import RedirectComp from "./Components/RedirectRoute"
+
 
 import { AuthContext } from "./HOC/LoginHOC";
 
@@ -23,13 +23,17 @@ function App() {
             <Route exact path="/login">
               <LoginComp />
             </Route>
-            <Route exact path="/redirect/:id">
-              <RedirectComp />
+            <Route exact path="/dashboard/:id">
+              <DashboardComp />
             </Route>
 
           </>
         ) : (
             <>
+             <Route exact path="/dashboard/:id">
+              <DashboardComp />
+            </Route>
+
               <Route exact path="/dashboard">
                 <DashboardComp />
               </Route>

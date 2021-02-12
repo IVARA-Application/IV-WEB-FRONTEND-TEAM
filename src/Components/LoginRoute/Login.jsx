@@ -4,15 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 const Login = () => {
-
-
    const [number, setnumber] = useState("");
-
-
-
-   
-
-  
     const inputEvent=(event)=>{
         setnumber(event.target.value);
     }

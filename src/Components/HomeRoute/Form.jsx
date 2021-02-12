@@ -1,7 +1,46 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Form.css";
 
+import {baseUrl} from "../../constants/index";
+import axios from "axios";
+
 const Form = () => {
+  const [name,setName] = useState("");
+  const [email,setEmail] = useState("");
+  const [query,setQuery] = useState();
+
+  const onSubmit = () =>{
+    const details = {"name": name, "email": email, "query": query}
+    console.log(details)
+
+    axios
+    .post(baseUrl + "contactus/", details)
+    .then(
+      (response) => {
+        if (response.ok) {
+          return response;
+        } else {
+          var error = new Error(
+            "Error " + response.status + ": " + response.statusText
+          );
+          error.response = response;
+          throw error;
+        }
+      },
+      (error) => {
+        throw error;
+      }
+    )
+    .then((response) => response.json())
+    .catch((error) => {
+      console.log("post contact us", error.message);
+    });
+
+    setEmail("");
+    setName("");
+    setQuery("");
+  }
+
   return (
     <>
       <div className="secondSection container-fluid">
@@ -27,6 +66,8 @@ const Form = () => {
                 className="form-control w-50 "
                 id="name"
                 aria-describedby="addon-wrapping"
+                value={name}
+                onChange={(e)=>{setName(e.target.value)}}
               />
               <label className="form-label" for="name">
                 Name
@@ -38,6 +79,8 @@ const Form = () => {
                 className="form-control w-50"
                 id="email"
                 aria-describedby="addon-wrapping"
+                value={email}
+                onChange={(e)=>{setEmail(e.target.value)}}
               />
               <label className="form-label" for="email">
                 Email ID
@@ -49,13 +92,15 @@ const Form = () => {
                 className="form-control w-50"
                 id="message"
                 aria-describedby="addon-wrapping"
+                value={query}
+                onChange={(e)=>{setQuery(e.target.value)}}
               />
               <label className="form-label" for="message">
                 Message
               </label>
             </div>
             <div className=" form-input form-inline">
-              <button type="button" class="btn formButton w-50">
+              <button type="button" onClick={()=>{onSubmit()}} class="btn formButton w-50">
                 Submit
               </button>
             </div>
