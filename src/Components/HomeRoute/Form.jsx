@@ -47,7 +47,7 @@ const Form = () => {
         <div className="row secondSectionFirstRow">
           <div className="col-lg-6 col-md-6 col-sm-6">
             <h1 className="big-heading sideFormHeading">
-              It’s just the beginning in<br/> re-imagining the indian <br/>education
+              It’s just the beginning in<br/> re-imagining the Indian <br/>Education
             </h1>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-6">
@@ -60,11 +60,12 @@ const Form = () => {
             <h1 className="form-heading">
               Drop down your Queries and we will be right back with our answers!
             </h1>
-            <div className=" form-input form-inline ">
+            <div className=" form-input form-inline formElement">
               <input
                 type="text"
                 className="form-control w-50 "
                 id="name"
+                placeholder="Your Name"
                 aria-describedby="addon-wrapping"
                 value={name}
                 onChange={(e)=>{setName(e.target.value)}}
@@ -73,11 +74,12 @@ const Form = () => {
                 Name
               </label>
             </div>
-            <div className=" form-input form-inline">
+            <div className=" form-input form-inline formElement">
               <input
                 type="email"
                 className="form-control w-50"
                 id="email"
+                placeholder="Your Email"
                 aria-describedby="addon-wrapping"
                 value={email}
                 onChange={(e)=>{setEmail(e.target.value)}}
@@ -86,12 +88,13 @@ const Form = () => {
                 Email ID
               </label>
             </div>
-            <div className=" form-input form-inline">
+            <div className=" form-input form-inline formElement">
               <input
                 type="text"
                 className="form-control w-50"
                 id="message"
                 aria-describedby="addon-wrapping"
+                placeholder="Your Message"
                 value={query}
                 onChange={(e)=>{setQuery(e.target.value)}}
               />
@@ -99,8 +102,8 @@ const Form = () => {
                 Message
               </label>
             </div>
-            <div className=" form-input form-inline">
-              <button type="button" onClick={()=>{onSubmit()}} class="btn formButton w-50">
+            <div className=" form-input form-inline formElement">
+              <button type="button" onClick={()=>{onSubmit()}} class="btn formButton w-50 ">
                 Submit
               </button>
             </div>
@@ -110,5 +113,4 @@ const Form = () => {
     </>
   );
 };
-
 export default Form;
