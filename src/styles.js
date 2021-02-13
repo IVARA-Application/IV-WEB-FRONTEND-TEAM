@@ -13,20 +13,30 @@ export const Entrance = styled.div`
   P {
     color: #6f6e6d;
     font-size: 1.25rem;
-    padding: 4rem 0rem 2.5rem 0rem;
+    padding: 4rem 20rem 2.5rem 20rem;
     letter-spacing: 3px;
   }
   text-align: center;
   align-items: center;
   .girl {
-    padding-top: 11rem;
+    padding-top: 8rem;
     align-self: center;
     border-radius: 10px;
   }
-
+  @media (max-width: 1600px) {
+    p {
+      padding: 2rem 6rem;
+    }
+  }
+  @media (max-width: 1200px) {
+    P {
+      padding: 0rem;
+      padding: 2rem 4rem;
+    }
+  }
   @media (max-width: 900px) {
     .girl {
-      width: 40%;
+      width: 60%;
     }
     p {
       letter-spacing: 1px;
@@ -39,7 +49,6 @@ export const Entrance = styled.div`
     }
     .girl {
       padding-top: 6rem;
-      width: 40%;
     }
   }
 `;
@@ -56,7 +65,7 @@ export const PypContainer = styled.div`
   h1 {
     font-size: 2.25rem;
     color: #4e5de1;
-    padding-top: 6rem;
+    padding-top: 4rem;
     letter-spacing: 4px;
   }
   P {
@@ -67,9 +76,9 @@ export const PypContainer = styled.div`
   }
   img {
     padding: 0rem 8rem;
-    .girl1 {
-      border-radius: 5px;
-    }
+  }
+  .img {
+    width: 100%;
   }
   .description {
     padding: 3rem 10rem;
@@ -78,10 +87,10 @@ export const PypContainer = styled.div`
     .description {
       padding: 0rem;
     }
-    .girl1,
     .books {
+      padding: 0rem;
       padding-top: 6rem;
-      width: 40%;
+      width: 110%;
     }
   }
 
@@ -89,9 +98,6 @@ export const PypContainer = styled.div`
     text-align: center;
     align-items: center;
     padding: 0rem;
-    .img {
-      padding: 0rem 1rem;
-    }
     h1,
     p {
       letter-spacing: 3px;
@@ -107,13 +113,9 @@ export const PypContainer = styled.div`
       padding: 1rem 4rem;
       letter-spacing: 2px;
     }
-    .girl1,
     .books {
+      padding: 0rem;
       padding-top: 6rem;
-      width: 100%;
-    }
-    .books {
-      padding-top: 4rem;
     }
   }
   @media (max-width: 1122px) {
@@ -126,7 +128,6 @@ export const PypContainer = styled.div`
     }
   }
   @media (max-width: 1200px) {
-    display: block;
     P {
       padding: 2rem 6rem;
     }
@@ -171,12 +172,18 @@ export const SkillContainer = styled.div`
       padding: 1rem 0rem;
       margin: 0rem;
     }
+    p {
+      letter-spacing: 1px;
+    }
     .skill-right {
       margin: 0rem;
     }
+    .skill {
+      width: 100%;
+    }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     .skill {
       width: 100%;
     }
@@ -470,6 +477,7 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
   position: relative;
   flex: 0.5;
+  overflow: hidden;
   .circle {
     position: absolute;
     z-index: -2;

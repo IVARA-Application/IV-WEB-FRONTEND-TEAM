@@ -8,9 +8,6 @@ const PreviousYearSection = () => {
   return (
     <div>
       <PypContainer>
-        <div className="img">
-          <img className="girl1" src={girl} alt="" />
-        </div>
         <div className="description">
           <h1>Previous Year papers</h1>
           <p>
@@ -24,6 +21,8 @@ const PreviousYearSection = () => {
         <div className="img">
           <img className="books" src={books} alt="" />
         </div>
+      </PypContainer>
+      <PypContainer>
         <div className="description">
           <h1>E-Books and E-Test Series</h1>
           <p>
