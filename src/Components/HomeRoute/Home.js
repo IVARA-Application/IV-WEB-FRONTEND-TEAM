@@ -20,8 +20,8 @@ const Home = () => {
                 <h3>IVentors Augmented Reality Arena, is a “One Platform for Complete School Ecosystem” through AR Technology for Schools. IVARA Classes, the future of education, makes learning innovative and easy to understand. It makes the strenuous concepts simple and boring lectures interesting.  
 
                 </h3>
-              <div className="row  "
-              style={{marginTop:"5px"}}> 
+              <div className="row "
+              style={{marginTop:"10px"}}> 
               <button
                   className="form-btn"
                   style={{borderRadius: "10px",height: "45px", backgroundColor:"#105af6" , marginTop:"10px", marginLeft:"10px"}}>
@@ -29,7 +29,9 @@ const Home = () => {
                 </button></div>
             </div>
             <div className="col-lg-6 d-none d-xs-none d-sm-none d-md-none d-lg-block" style={{overflow:"none"}}>
-              <img src={svg1}  style={{height:"95%",width:"95%",marginLeft:"220px"}} />       </div>
+              
+              <img src={svg1}  style={{height:"95%",width:"95%",marginLeft:"180px"}} /> 
+                   </div>
           </div>
           </div>
       </section>
