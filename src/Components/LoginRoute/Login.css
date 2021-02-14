@@ -72,7 +72,7 @@ body{
     padding-top: 40px;
   }
   .inputContainer {
-    width: 300px !important;
+    width: 400px !important;
   }
   .emailId {
     display: block;
@@ -114,18 +114,18 @@ body{
 }
 @media (max-width: 576px){
     .inputContainer {
-        width: 250px !important;
+        width: 450px !important;
       }
 }
 
 @media (max-width: 428px){
     .inputContainer {
-        width: 200px !important;
+        width: 300px !important;
       }
 }
 
-@media (max-width: 307px){
+@media (max-width: 320px){
   .inputContainer {
-      width: 200px !important;
+      width: 250px !important;
     }
 }
