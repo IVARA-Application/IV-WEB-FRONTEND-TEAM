@@ -13,7 +13,7 @@ const Home = () => {
         <div className="container">
           <div className="overlay overlay-bg"></div>
           <div className="row fullscreen d-flex align-items-center justify-content-start">
-            <div className="banner-content col-lg-6 col-md-12 col-sm-10">
+            <div className="banner-content col-lg-6">
               <h2 className="text-uppercase">
                 Ivara <img className="bird" src={svg2}/> </h2>
                 <br></br>
