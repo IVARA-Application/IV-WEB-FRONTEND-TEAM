@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ac884ee.chunk.css",
-    "main.js": "/static/js/main.6a83ea29.chunk.js",
-    "main.js.map": "/static/js/main.6a83ea29.chunk.js.map",
+    "main.css": "/static/css/main.97d50c2b.chunk.css",
+    "main.js": "/static/js/main.3ac7bd6d.chunk.js",
+    "main.js.map": "/static/js/main.3ac7bd6d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7b81c07b.js",
     "runtime-main.js.map": "/static/js/runtime-main.7b81c07b.js.map",
     "static/css/2.b0704b7a.chunk.css": "/static/css/2.b0704b7a.chunk.css",
-    "static/js/2.c05006f1.chunk.js": "/static/js/2.c05006f1.chunk.js",
-    "static/js/2.c05006f1.chunk.js.map": "/static/js/2.c05006f1.chunk.js.map",
+    "static/js/2.0beee987.chunk.js": "/static/js/2.0beee987.chunk.js",
+    "static/js/2.0beee987.chunk.js.map": "/static/js/2.0beee987.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.568cab12e4e5ec3183f3fa46e3d609d2.js": "/precache-manifest.568cab12e4e5ec3183f3fa46e3d609d2.js",
+    "precache-manifest.7e1a90259c8bc8e24301b40cbb224400.js": "/precache-manifest.7e1a90259c8bc8e24301b40cbb224400.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.b0704b7a.chunk.css.map": "/static/css/2.b0704b7a.chunk.css.map",
-    "static/css/main.6ac884ee.chunk.css.map": "/static/css/main.6ac884ee.chunk.css.map",
-    "static/js/2.c05006f1.chunk.js.LICENSE.txt": "/static/js/2.c05006f1.chunk.js.LICENSE.txt",
-    "static/media/SAC.png": "/static/media/SAC.c0683d5b.png",
-    "static/media/VTC.png": "/static/media/VTC.5eefded0.png",
+    "static/css/main.97d50c2b.chunk.css.map": "/static/css/main.97d50c2b.chunk.css.map",
+    "static/js/2.0beee987.chunk.js.LICENSE.txt": "/static/js/2.0beee987.chunk.js.LICENSE.txt",
+    "static/media/SAC.png": "/static/media/SAC.0125a26a.png",
+    "static/media/VTC.png": "/static/media/VTC.87b803b0.png",
     "static/media/bird.svg": "/static/media/bird.cdf923d5.svg",
     "static/media/books.png": "/static/media/books.c0af8ff8.png",
     "static/media/card1.png": "/static/media/card1.8280c164.png",
@@ -40,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.7b81c07b.js",
     "static/css/2.b0704b7a.chunk.css",
-    "static/js/2.c05006f1.chunk.js",
-    "static/css/main.6ac884ee.chunk.css",
-    "static/js/main.6a83ea29.chunk.js"
+    "static/js/2.0beee987.chunk.js",
+    "static/css/main.97d50c2b.chunk.css",
+    "static/js/main.3ac7bd6d.chunk.js"
   ]
 }
