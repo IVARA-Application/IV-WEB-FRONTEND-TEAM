@@ -12,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     <AuthContextProvider>
     <App />
-    <Lines time={1800}/>
+    <Lines />
     </AuthContextProvider>
   </React.StrictMode>,
   document.getElementById('root')

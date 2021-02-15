@@ -30,7 +30,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6 d-none d-xs-none d-sm-none d-md-none d-lg-block" style={{overflow:"none"}}>
               
-              <img src={svg1}  style={{height:"95%",width:"95%",marginLeft:"180px"}} /> 
+              <img src={svg1}  style={{height:"95%",width:"95%",float:"right"}} /> 
                    </div>
           </div>
           </div>
