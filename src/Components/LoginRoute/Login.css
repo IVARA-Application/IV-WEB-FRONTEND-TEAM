@@ -115,7 +115,7 @@ body{
 }
 @media (max-width: 576px){
     .inputContainer {
-        width: 450px !important;
+        width: 400px !important;
       }
 }
 
