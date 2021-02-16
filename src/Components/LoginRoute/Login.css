@@ -42,6 +42,7 @@ body{
   background: #f2f2f2 !important;
   box-shadow: 0px 10px 15px 0px #000000 10%;
   border-radius: 9px;
+  appearance: none;
 }
 .submitButton {
   font-size: 25px !important;
@@ -72,7 +73,7 @@ body{
     padding-top: 40px;
   }
   .inputContainer {
-    width: 300px !important;
+    width: 400px !important;
   }
   .emailId {
     display: block;
@@ -114,18 +115,29 @@ body{
 }
 @media (max-width: 576px){
     .inputContainer {
-        width: 250px !important;
+        width: 400px !important;
       }
 }
 
 @media (max-width: 428px){
     .inputContainer {
-        width: 200px !important;
+        width: 300px !important;
       }
 }
 
-@media (max-width: 307px){
+@media (max-width: 320px){
   .inputContainer {
-      width: 200px !important;
+      width: 250px !important;
     }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

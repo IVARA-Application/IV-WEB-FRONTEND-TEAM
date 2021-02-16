@@ -145,6 +145,41 @@ text-align:center;
 padding-left:15px;
 }
 .form .formElement{
-padding-left:50px;
+padding-left:5%;
+margin-right: 5%;
+
+}
+.form-input
+{
+ width: 500px !important;
+}
+}
+
+@media (max-width: 400px) { 
+  .form-heading{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.025em;
+    text-align: center !important;
+    margin:0 !important;
+  }
+  .form-label{
+    display:none;
+ }
+ .sideFormHeading{
+  font-size: 18px !important;
+text-align:center;
+}
+.secondSection{
+padding-left:15px;
+}
+.form .formElement{
+padding-left:2%;
+
+}
+.form-input
+{
+ width: 300px !important;
 }
 }
