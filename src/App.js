@@ -30,13 +30,14 @@ function App() {
           </>
         ) : (
             <>
+            <Route exact path="/dashboard">
+                <DashboardComp />
+              </Route>
              <Route exact path="/dashboard/:id">
               <DashboardComp />
             </Route>
 
-              <Route exact path="/dashboard">
-                <DashboardComp />
-              </Route>
+              
             </>
           )}
 

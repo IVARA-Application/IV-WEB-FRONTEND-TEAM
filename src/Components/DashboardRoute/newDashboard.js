@@ -4,7 +4,7 @@ import {withRouter, useParams} from 'react-router-dom'
 import axios from 'axios'
 import {baseUrl} from '../../constants'
 
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import svg1 from '../images/entrance.svg';
 import svg2 from '../images/study.svg';
 import svg3 from '../images/skill.svg';
@@ -67,12 +67,14 @@ const Dashboard =({history})=>
 
     return (
         <div className="container-dashboard">
-          
+            <div className="row d-flex justify-content-center">
             <u className="heading1">IVARA</u>
-            
+            </div>
            
-            <div class="d-flex justify-content-end">
-            <p className="heading2">Hey,{user.firstname}</p>
+            <div className="row d-flex justify-content-end">
+            
+            <p className="heading2">Hey{user.firstname}</p>
+            
             </div>
             <div className="row" style={{marginTop:"130px"}}>
             <div className="col-lg-3 d-flex justify-content-center"  style={{padding :"20px"}}>

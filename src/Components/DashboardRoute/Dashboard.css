@@ -22,9 +22,9 @@
 }
 .heading1
 {
-    position: absolute;
-    margin: auto;
-   left:44vw;
+    
+    
+   
     
     font-family:Poppins;
     font-style: normal;
@@ -33,9 +33,9 @@
     line-height: 44px;
     /* identical to box height */
     
-    text-align: center;
+    
     letter-spacing: 0.1em;
-    justify-content: center;
+    
     color: #4E5DE1;
      
 }
@@ -50,7 +50,7 @@
 }
 .heading2
 {
-    position: absolute;
+   
 
 
 
@@ -66,4 +66,11 @@ text-align: center;
 letter-spacing: 0.1em;
 
 color: #4E5DE1;
+}
+@media only screen and (max-width:768px)
+{
+.heading2{
+    margin-top: 20px;
+    font-size: 20px;
+}
 }
