@@ -30,7 +30,7 @@ const AboutSection = ({history}) => {
               <img src={student} />
             </div>
             <p>
-              200000 <span>+</span>
+              20000 <span>+</span>
               <br /> Students
             </p>
           </Card>
