@@ -5,41 +5,28 @@ import HomeComp from "./Components/HomeRoute";
 import LoginComp from "./Components/LoginRoute";
 import DashboardComp from "./Components/DashboardRoute";
 
-
 import { AuthContext } from "./HOC/LoginHOC";
-
-
+import GoogleAuthRouteCompoment from "./Components/GoogleAuthRoute";
 
 function App() {
   const { auth } = useContext(AuthContext);
   return (
     <BrowserRouter>
       <Switch>
-        {!auth ? (
-          <>
-            <Route exact path="/">
-              <HomeComp />
-            </Route>
-            <Route exact path="/login">
-              <LoginComp />
-            </Route>
-            <Route exact path="/dashboard/:id">
-              <DashboardComp />
-            </Route>
-
-          </>
-        ) : (
-            <>
-            <Route exact path="/dashboard">
-                <DashboardComp />
-              </Route>
-             <Route exact path="/dashboard/:id">
-              <DashboardComp />
-            </Route>
-
-              
-            </>
-          )}
+        <>
+          <Route exact path="/">
+            <HomeComp />
+          </Route>
+          <Route exact path="/login">
+            <LoginComp />
+          </Route>
+          <Route exact path="/dashboard">
+            <DashboardComp />
+          </Route>
+          <Route exact path="/user/authcode">
+            <GoogleAuthRouteCompoment />
+          </Route>
+        </>
 
         <Route path="*">
           <NotFound />
