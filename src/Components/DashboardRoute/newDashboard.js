@@ -1,8 +1,7 @@
 import React, { useContext, useEffect } from "react";
-import { withRouter, useParams } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 import axios from "axios";
-import { baseUrl } from "../../constants";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import svg1 from "../images/entrance.svg";
@@ -17,47 +16,26 @@ import Card from "react-bootstrap/Card";
 
 import { AuthContext } from "../../HOC/LoginHOC";
 
-const Dashboard = ({ history }) => {
-  const { setAuth, setUser, user } = useContext(AuthContext);
+const Dashboard = () => {
+  const { setUser, user } = useContext(AuthContext);
 
-  const { id } = useParams();
-
-  useEffect(() => {
+  useEffect(async () => {
     console.log(window.localStorage.getItem("token"));
-    console.log(user.username);
-    const fetchdata = () =>
-      axios
-        .put(baseUrl + `users/${id}`)
-        .then(
-          (response) => {
-            if (response.status === 200) {
-              return response;
-            } else {
-              var error = new Error(
-                "Error " + response.status + ": " + response.statusText
-              );
-              error.response = response;
-              throw error;
-            }
+    if (window.localStorage.getItem("auth") !== "true") {
+      window.location.replace("/login");
+    }
+    try {
+      const user = await axios.get(
+        "https://mnua40by72.execute-api.ap-south-1.amazonaws.com/latest/user",
+        {
+          headers: {
+            authorization: window.localStorage.getItem("token"),
           },
-          (error) => {
-            throw error;
-          }
-        )
-        .then((response) => {
-          setUser(response.data);
-          setAuth(true);
-          history.replace("/dashboard");
-        })
-        .catch((err) => {
-          console.log(err);
-          history.replace("/");
-        });
-
-    const nofetchdata = () => <></>;
-
-    {
-      id ? fetchdata() : nofetchdata();
+        }
+      );
+      setUser(user.data);
+    } catch (error) {
+      window.location.replace("/login");
     }
   }, []);
 
@@ -68,7 +46,7 @@ const Dashboard = ({ history }) => {
       </div>
 
       <div className="row d-flex justify-content-end">
-        <p className="heading2">Hey{user.firstname}</p>
+        <p className="heading2">Hey, {user.firstname}</p>
       </div>
       <div className="row" style={{ marginTop: "130px" }}>
         <div

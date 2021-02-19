@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../../HOC/LoginHOC";
 
 function GoogleAuthRoute() {
-  const { setAuth } = useContext(AuthContext);
+  const { auth, authStatus } = useContext(AuthContext);
 
   const [message, setMessage] = useState("Please wait while we log you in...");
 
@@ -15,7 +15,7 @@ function GoogleAuthRoute() {
     else {
       axios
         .post(
-          "https://mnua40by72.execute-api.ap-south-1.amazonaws.com/latest/user",
+          "https://mnua40by72.execute-api.ap-south-1.amazonaws.com/latest/user/google",
           {
             code: code,
           }
@@ -25,7 +25,7 @@ function GoogleAuthRoute() {
             return setMessage(response.data.message);
           }
           window.localStorage.setItem("token", response.data.token);
-          setAuth(true);
+          window.localStorage.setItem("auth", "true");
           window.location.replace("/dashboard");
         });
     }
