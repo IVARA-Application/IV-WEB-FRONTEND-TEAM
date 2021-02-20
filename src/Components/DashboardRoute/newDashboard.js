@@ -20,7 +20,6 @@ const Dashboard = () => {
   const { setUser, user } = useContext(AuthContext);
 
   useEffect(async () => {
-    console.log(window.localStorage.getItem("token"));
     if (window.localStorage.getItem("auth") !== "true") {
       window.location.replace("/login");
     }
