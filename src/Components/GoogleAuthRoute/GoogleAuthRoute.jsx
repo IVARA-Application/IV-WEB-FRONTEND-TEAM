@@ -22,11 +22,19 @@ function GoogleAuthRoute() {
         )
         .then((response) => {
           if (response.data.success !== true) {
-            return setMessage(response.data.message);
+            return setMessage(
+              response.data.message +
+                " Please retry or contact hello@iventorsinitiatives.com if the issue persists."
+            );
           }
           window.localStorage.setItem("token", response.data.token);
           window.localStorage.setItem("auth", "true");
           window.location.replace("/dashboard");
+        })
+        .catch((error) => {
+          setMessage(
+            "Could not log you in. Please retry or contact hello@iventorsinitiatives.com if the issue persists."
+          );
         });
     }
   }, []);
