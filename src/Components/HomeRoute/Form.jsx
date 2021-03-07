@@ -1,45 +1,34 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./Form.css";
 
-import {baseUrl} from "../../constants/index";
 import axios from "axios";
 
 const Form = () => {
-  const [name,setName] = useState("");
-  const [email,setEmail] = useState("");
-  const [query,setQuery] = useState();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [query, setQuery] = useState();
 
-  const onSubmit = () =>{
-    const details = {"name": name, "email": email, "query": query}
-    console.log(details)
+  const onSubmit = async () => {
+    const details = { name: name, email: email, query: query };
 
-    axios
-    .post(baseUrl + "contactus/", details)
-    .then(
-      (response) => {
-        if (response.ok) {
-          return response;
-        } else {
-          var error = new Error(
-            "Error " + response.status + ": " + response.statusText
-          );
-          error.response = response;
-          throw error;
-        }
-      },
-      (error) => {
-        throw error;
-      }
-    )
-    .then((response) => response.json())
-    .catch((error) => {
-      console.log("post contact us", error.message);
-    });
+    try {
+      const response = await axios.post(
+        "https://mnua40by72.execute-api.ap-south-1.amazonaws.com/latest/user/contact-us",
+        details
+      );
+      alert(
+        "Thank you for contacting IVARA! We will get back in touch with you shortly."
+      );
+    } catch (error) {
+      alert(
+        "We could not process your request. Please email us at hello@iventorsinitiatives.com"
+      );
+    }
 
     setEmail("");
     setName("");
     setQuery("");
-  }
+  };
 
   return (
     <>
@@ -47,11 +36,16 @@ const Form = () => {
         <div className="row secondSectionFirstRow">
           <div className="col-lg-6 col-md-6 col-sm-6">
             <h1 className="big-heading sideFormHeading">
-              It’s just the beginning in<br/> re-imagining the Indian <br/>Education
+              It’s just the beginning in
+              <br /> re-imagining the Indian <br />
+              Education
             </h1>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-6">
-            <h1 className="big-heading sideFormHeading">We have a lot coming <br/>sooon!!</h1>
+            <h1 className="big-heading sideFormHeading">
+              We have a lot coming <br />
+              sooon!!
+            </h1>
           </div>
         </div>
 
@@ -68,7 +62,9 @@ const Form = () => {
                 placeholder="Your Name"
                 aria-describedby="addon-wrapping"
                 value={name}
-                onChange={(e)=>{setName(e.target.value)}}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
               />
               <label className="form-label" for="name">
                 Name
@@ -82,7 +78,9 @@ const Form = () => {
                 placeholder="Your Email"
                 aria-describedby="addon-wrapping"
                 value={email}
-                onChange={(e)=>{setEmail(e.target.value)}}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
               />
               <label className="form-label" for="email">
                 Email ID
@@ -96,14 +94,22 @@ const Form = () => {
                 aria-describedby="addon-wrapping"
                 placeholder="Your Message"
                 value={query}
-                onChange={(e)=>{setQuery(e.target.value)}}
+                onChange={(e) => {
+                  setQuery(e.target.value);
+                }}
               />
               <label className="form-label" for="message">
                 Message
               </label>
             </div>
             <div className=" form-input form-inline formElement">
-              <button type="button" onClick={()=>{onSubmit()}} class="btn formButton w-50 ">
+              <button
+                type="button"
+                onClick={() => {
+                  onSubmit();
+                }}
+                class="btn formButton w-50 "
+              >
                 Submit
               </button>
             </div>
