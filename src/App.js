@@ -4,6 +4,7 @@ import NotFound from "./Components/NotFound";
 import HomeComp from "./Components/HomeRoute";
 import LoginComp from "./Components/LoginRoute";
 import DashboardComp from "./Components/DashboardRoute";
+import VideoDash from "./Components/HomeRoute/VideoDash";
 
 import { AuthContext } from "./HOC/LoginHOC";
 import GoogleAuthRouteCompoment from "./Components/GoogleAuthRoute";

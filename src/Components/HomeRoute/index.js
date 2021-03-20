@@ -12,11 +12,13 @@ import IntroductionSection from "./IntroductionSection";
 import AboutSection from "./AboutSection";
 import Middle from "./Middle";
 import Form from "./Form";
+import VideoDash from "./VideoDash";
 import { Footer, Copyright } from "./Contact";
 
 function HomeComp({ history }) {
   return (
     <>
+      {/* <VideoDash /> */}
       <Home />
       <GlobalStyle />
       <EntranceExamCourse />
