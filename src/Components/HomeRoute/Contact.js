@@ -98,7 +98,6 @@ const Form2 = () => {
             />
             <Label for="email">Email</Label>
           </FormGroup>
-
           <FormGroup>
             <Input
               type="text"
@@ -145,25 +144,36 @@ const Footer = () => (
           <span>Contact Us:</span>
           <br />
           <br />
-          1800-xxxx-xxx
+          784 0879 398
           <br />
           hello@iventorsinitiatives.com
           <br />
-          Uttar Pradesh, India
+          Lucknow, India <br />
+          Chennai, India
         </div>
       </p>
 
       <p>
         <div id="pop">
-          FAQs
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hello@iventorsinitiatives.com "
+            target="_blank"
+          >
+            FAQs
+          </a>
           <br />
           Blogs
           <br />
-          MentorBaba
+          <a href="https://www.mentorbaba.in/">MentorBaba</a>
           <br />
           HealMyMind
           <br />
-          Terms
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hello@iventorsinitiatives.com "
+            target="_blank"
+          >
+            Terms
+          </a>
         </div>
       </p>
     </div>
@@ -175,19 +185,34 @@ const Copyright = () => (
     <div class="fade-in">
       <p>
         <div id="pulse">
-          <FaFacebook size="20px" />
+          <a
+            className="footer-social-Icons"
+            href="https://m.facebook.com/ivarabyiv/"
+          >
+            <FaFacebook size="20px" />
+          </a>
         </div>
         <div id="pulse">
-          <FaInstagram size="20px" />
+          <a
+            className="footer-social-Icons"
+            href="https://instagram.com/ivarabyiv?igshid=19ygjgncjkmuf"
+          >
+            <FaInstagram size="20px" />
+          </a>
         </div>
         <div id="pulse">
           <FaTwitter size="20px" />
         </div>
-        <div id="pulse">
+        <div className="footer-social-Icons" id="pulse">
           <FaYoutube size="20px" />
         </div>
         <div id="pulse">
-          <FaLinkedin size="20px" />
+          <a
+            className="footer-social-Icons"
+            href="https://www.linkedin.com/company/iventorsinitiatives"
+          >
+            <FaLinkedin size="20px" />
+          </a>
         </div>
       </p>
       <p>

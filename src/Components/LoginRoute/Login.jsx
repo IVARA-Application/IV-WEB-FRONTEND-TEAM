@@ -82,8 +82,8 @@ const Login = () => {
           </div>
         </form>
         <p className="contact">
-          Having trouble? Please contact help@iventorsinitiatives.com for
-          further support.
+          Having trouble? Please contact hello@iventorsinitiatives.com for
+          further support
         </p>
       </div>
     </>
