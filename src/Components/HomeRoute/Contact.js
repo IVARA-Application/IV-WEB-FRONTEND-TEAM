@@ -146,7 +146,12 @@ const Footer = () => (
           <br />
           784 0879 398
           <br />
-          hello@iventorsinitiatives.com
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hello@iventorsinitiatives.com "
+            target="_blank"
+          >
+            hello@iventorsinitiatives.com
+          </a>
           <br />
           Lucknow, India <br />
           Chennai, India
@@ -166,7 +171,7 @@ const Footer = () => (
           <br />
           <a href="https://www.mentorbaba.in/">MentorBaba</a>
           <br />
-          HealMyMind
+          <a href="healmymind.in">HealMyMind</a>
           <br />
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hello@iventorsinitiatives.com "
@@ -199,12 +204,6 @@ const Copyright = () => (
           >
             <FaInstagram size="20px" />
           </a>
-        </div>
-        <div id="pulse">
-          <FaTwitter size="20px" />
-        </div>
-        <div className="footer-social-Icons" id="pulse">
-          <FaYoutube size="20px" />
         </div>
         <div id="pulse">
           <a

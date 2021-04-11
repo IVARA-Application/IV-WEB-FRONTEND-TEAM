@@ -11,7 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <AuthContextProvider>
       <App />
-      <Lines />
+      {/* <Lines /> */}
     </AuthContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
