@@ -27,6 +27,9 @@ function App() {
           <Route exact path="/user/authcode">
             <GoogleAuthRouteCompoment />
           </Route>
+          <Route exact path="/content/video">
+            <VideoDash />
+          </Route>
         </>
 
         <Route path="*">

@@ -16,6 +16,12 @@ import Card from "react-bootstrap/Card";
 
 import { AuthContext } from "../../HOC/LoginHOC";
 
+const logoutFunction = () => {
+  window.localStorage.setItem("auth", "");
+  window.localStorage.setItem("token", "");
+  window.location.href = "/";
+};
+
 const Dashboard = () => {
   const { setUser, user } = useContext(AuthContext);
 
@@ -36,7 +42,7 @@ const Dashboard = () => {
     } catch (error) {
       window.location.replace("/login");
     }
-  }, []);
+  });
 
   return (
     <div className="container-dashboard">
@@ -44,8 +50,15 @@ const Dashboard = () => {
         <u className="heading1">IVARA</u>
       </div>
 
-      <div className="row d-flex justify-content-end">
-        <p className="heading2">Hey, {user.firstname}</p>
+      <div className="row d-flex justify-content-between">
+        <p className="heading2">Hey, {user.firstname} </p>
+        <span
+          className="heading2"
+          style={{ cursor: "pointer" }}
+          onClick={() => logoutFunction()}
+        >
+          Logout
+        </span>
       </div>
       <div className="row" style={{ marginTop: "130px" }}>
         <div
@@ -56,6 +69,10 @@ const Dashboard = () => {
             style={{
               width: "18rem",
               boxShadow: " 0px 20px 20px rgba(136, 136, 136, 0.25)",
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              window.location.href = "/content/video";
             }}
           >
             <Card.Img
@@ -65,7 +82,7 @@ const Dashboard = () => {
             />
             <Card.Body>
               <Card.Title className="t1" style={{ marginTop: "10px" }}>
-                Entrance Exams Courses
+                Entrane Exam Courses
               </Card.Title>
             </Card.Body>
           </Card>

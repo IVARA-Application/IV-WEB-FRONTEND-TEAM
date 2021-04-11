@@ -37,7 +37,7 @@ function GoogleAuthRoute() {
           );
         });
     }
-  }, []);
+  });
   return <div>{message}</div>;
 }
 
