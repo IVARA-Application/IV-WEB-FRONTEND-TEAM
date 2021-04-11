@@ -29,23 +29,26 @@ const VideoApp = () => {
   }
   const { setUser, user } = useContext(AuthContext);
 
-  useEffect(async () => {
-    if (window.localStorage.getItem("auth") !== "true") {
-      window.location.replace("/login");
+  useEffect(() => {
+    async function fetchData() {
+      if (window.localStorage.getItem("auth") !== "true") {
+        window.location.replace("/login");
+      }
+      try {
+        const user = await axios.get(
+          "https://mnua40by72.execute-api.ap-south-1.amazonaws.com/latest/user",
+          {
+            headers: {
+              authorization: window.localStorage.getItem("token"),
+            },
+          }
+        );
+        setUser(user.data);
+      } catch (error) {
+        window.location.replace("/login");
+      }
     }
-    try {
-      const user = await axios.get(
-        "https://mnua40by72.execute-api.ap-south-1.amazonaws.com/latest/user",
-        {
-          headers: {
-            authorization: window.localStorage.getItem("token"),
-          },
-        }
-      );
-      setUser(user.data);
-    } catch (error) {
-      window.location.replace("/login");
-    }
+    fetchData();
   });
 
   return (
