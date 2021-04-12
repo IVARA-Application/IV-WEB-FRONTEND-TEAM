@@ -2,6 +2,7 @@ import ReactPlayer from "react-player";
 import React, { useEffect, useContext } from "react";
 import { AuthContext } from "../../HOC/LoginHOC";
 import axios from "axios";
+import logo from "../images/Logo.png";
 
 //Documentation - https://www.npmjs.com/package/react-player
 
@@ -16,6 +17,7 @@ const VideoApp = () => {
     "https://s3.ap-south-1.amazonaws.com/ivaraedu.com/Recording+%233+-+Siddhi+Chandak.mp4",
     "https://s3.ap-south-1.amazonaws.com/ivaraedu.com/Karan_Maths+-+karan+chotrani.mp4",
     "https://s3.ap-south-1.amazonaws.com/ivaraedu.com/shivani+maru-maths+-+Shivani+Maru.mp4",
+    "https://s3.ap-south-1.amazonaws.com/ivaraedu.com/video+-+Varsha+Kadyan",
   ];
   const queryObject = new URLSearchParams(window.location.search);
   const playValue = queryObject.get("play");
@@ -53,7 +55,7 @@ const VideoApp = () => {
 
   return (
     <div className="d-flex col">
-      <div className="col">
+      <div className="col-12 col-md-9">
         <p
           style={{
             display: "inline-flex",
@@ -62,6 +64,7 @@ const VideoApp = () => {
           }}
         >
           <h3 style={{ display: "inline", position: "absolute", left: "0" }}>
+            <img src={logo} width="50px" style={{ marginRight: "10px" }} />
             Hey {user.firstname}
           </h3>
           <h4
@@ -81,7 +84,7 @@ const VideoApp = () => {
         </p>
         <ReactPlayer url={playUrl} controls width="100%" height="90vh" />
       </div>
-      <div className="space-y-2" style={{ overflow: "auto" }}>
+      <div className="col-12 col-md-3" style={{ overflow: "auto" }}>
         {videoArray.map((url, index) => {
           return (
             <div
@@ -90,7 +93,7 @@ const VideoApp = () => {
                 window.location.href = `/content/video?play=${index}`;
               }}
             >
-              <ReactPlayer url={url} />
+              <ReactPlayer url={url} width="100%" height="min-content" />
             </div>
           );
         })}
