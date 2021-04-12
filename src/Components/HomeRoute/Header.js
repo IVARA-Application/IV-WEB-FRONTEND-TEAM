@@ -10,11 +10,21 @@ const Header = () => {
           Login
         </a>
 
-        <a className="menu-item" href="/">
+        <a
+          className="menu-item"
+          href="https://www.healmymind.in"
+          target="_"
+          rel="noopener noreferrer"
+        >
           HealMyMind
         </a>
 
-        <a className="menu-item" href="/">
+        <a
+          className="menu-item"
+          href="https://www.mentorbaba.in"
+          target="_"
+          rel="noopener noreferrer"
+        >
           MentorBaba
         </a>
       </Menu>

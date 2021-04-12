@@ -163,6 +163,7 @@ const Footer = () => (
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hello@iventorsinitiatives.com "
             target="_blank"
+            rel="noopener noreferrer"
           >
             FAQs
           </a>
@@ -176,6 +177,7 @@ const Footer = () => (
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hello@iventorsinitiatives.com "
             target="_blank"
+            rel="noopener noreferrer"
           >
             Terms
           </a>
