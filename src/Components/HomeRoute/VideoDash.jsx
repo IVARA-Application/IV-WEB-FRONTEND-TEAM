@@ -41,7 +41,7 @@ const VideoApp = () => {
           "https://hro2ywog4d.execute-api.ap-south-1.amazonaws.com/latest/student/profile",
           {
             headers: {
-              authorization: window.localStorage.getItem("token"),
+              Authorization: `Bearer ${window.localStorage.getItem("token")}`,
             },
           }
         );

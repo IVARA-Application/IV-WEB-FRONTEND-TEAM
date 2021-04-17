@@ -42,10 +42,7 @@ const Login = () => {
   return (
     <>
       <div className="container-fluid login-container">
-        <form
-          action="https://mnua40by72.execute-api.ap-south-1.amazonaws.com/latest/user/glogin"
-          id="login-form"
-        >
+        <form id="login-form">
           <div className="container login ">
             <h1 className="loginHeading">Login to IVARA</h1>
             <p style={{ color: "yellow", fontWeight: "bold" }}>
@@ -76,7 +73,7 @@ const Login = () => {
             <button className=" submitButton" onClick={loginFunction}>
               Login
             </button>
-            <button className="emailId  submitButton" type="submit">
+            <button className="emailId  submitButton" type="submit" disabled>
               Continue with Google
             </button>
           </div>
