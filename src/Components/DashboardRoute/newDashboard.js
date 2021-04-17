@@ -32,7 +32,7 @@ const Dashboard = () => {
       }
       try {
         const user = await axios.get(
-          "https://mnua40by72.execute-api.ap-south-1.amazonaws.com/latest/user",
+          "https://hro2ywog4d.execute-api.ap-south-1.amazonaws.com/latest/student/profile",
           {
             headers: {
               authorization: window.localStorage.getItem("token"),
@@ -56,7 +56,7 @@ const Dashboard = () => {
       </div>
 
       <div className="row d-flex justify-content-between">
-        <p className="heading2">Hey, {user.firstname} </p>
+        <p className="heading2">Hey, {user.name} </p>
         <span
           className="heading2"
           style={{ cursor: "pointer" }}

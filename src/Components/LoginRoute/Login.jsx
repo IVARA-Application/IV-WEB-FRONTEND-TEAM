@@ -19,7 +19,7 @@ const Login = () => {
     });
     try {
       const response = await axios.post(
-        "https://mnua40by72.execute-api.ap-south-1.amazonaws.com/latest/user/login",
+        "https://hro2ywog4d.execute-api.ap-south-1.amazonaws.com/latest/student/login",
         {
           username: formFields[0].value,
           password: formFields[1].value,

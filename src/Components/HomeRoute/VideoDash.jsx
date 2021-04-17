@@ -38,7 +38,7 @@ const VideoApp = () => {
       }
       try {
         const user = await axios.get(
-          "https://mnua40by72.execute-api.ap-south-1.amazonaws.com/latest/user",
+          "https://hro2ywog4d.execute-api.ap-south-1.amazonaws.com/latest/student/profile",
           {
             headers: {
               authorization: window.localStorage.getItem("token"),
@@ -65,7 +65,7 @@ const VideoApp = () => {
         >
           <h3 style={{ display: "inline", position: "absolute", left: "0" }}>
             <img src={logo} width="50px" style={{ marginRight: "10px" }} />
-            Hey {user.firstname}
+            Hey {user.name}
           </h3>
           <h4
             style={{
