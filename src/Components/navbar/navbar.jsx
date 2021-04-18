@@ -32,6 +32,7 @@ export default function IvaraNavbar() {
           </Nav.Link>
           <NavDropdown
             title="Other Products"
+            className="px-3"
             id="basic-nav-dropdown"
             style={{ fontWeight: "500", fontSize: "20px" }}
           >
@@ -43,8 +44,16 @@ export default function IvaraNavbar() {
             </NavDropdown.Item>
           </NavDropdown>
           <Nav.Link
-            href="/login"
-            className="px-3"
+            onClick={() => {
+              if (window.localStorage.getItem("auth") === "true") {
+                window.localStorage.setItem("auth", "");
+                window.localStorage.setItem("token", "");
+                window.location.reload();
+              } else {
+                window.location.href = "/login";
+              }
+            }}
+            className="px-3 mx-3"
             style={{
               fontWeight: "700",
               fontSize: "20px",

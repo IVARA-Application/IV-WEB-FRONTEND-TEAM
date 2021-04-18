@@ -160,13 +160,7 @@ const Footer = () => (
 
       <p>
         <div id="pop">
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hello@iventorsinitiatives.com "
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            FAQs
-          </a>
+          <a href="/faq">FAQs</a>
           <br />
           Blogs
           <br />
