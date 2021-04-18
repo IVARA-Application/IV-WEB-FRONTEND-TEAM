@@ -1,5 +1,5 @@
 import React from "react";
-import Faq from "../Components/faq/Faq";
+import Faq from "../Components/faq/faq";
 import IvaraNavbar from "../Components/navbar/navbar";
 
 export default function FaqPage() {

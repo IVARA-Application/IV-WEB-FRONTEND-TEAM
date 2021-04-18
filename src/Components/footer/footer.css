@@ -1,0 +1,8 @@
+.footerContainer {
+  background-color: #4e5de1;
+  background: linear-gradient(50deg, #4e5de1, #252424);
+}
+
+.row {
+  margin: 0 !important;
+}

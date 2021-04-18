@@ -6,7 +6,7 @@ export default function IvaraNavbar() {
   const [actionText, setActionText] = useState("Login");
   useEffect(() => {
     if (window.localStorage.getItem("auth") === "true") setActionText("Logout");
-  });
+  }, []);
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Navbar.Brand href="/" style={{ fontSize: "30px" }}>

@@ -12,13 +12,12 @@ import IntroductionSection from "./IntroductionSection";
 import AboutSection from "./AboutSection";
 import Middle from "./Middle";
 import Form from "./Form";
-import VideoDash from "./VideoDash";
-import { Footer, Copyright } from "./Contact";
+import { Copyright } from "./Contact";
+import Footer from "../footer/footer";
 
 function HomeComp({ history }) {
   return (
     <>
-      {/* <VideoDash /> */}
       <Home />
       <GlobalStyle />
       <EntranceExamCourse />
@@ -31,7 +30,6 @@ function HomeComp({ history }) {
       <Middle />
       <Form />
       <Footer />
-      <Copyright />
     </>
   );
 }

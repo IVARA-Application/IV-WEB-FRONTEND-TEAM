@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import "./Faq.css";
+import "./faq.css";
 import { Card } from "react-bootstrap";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import axios from "axios";
@@ -24,7 +24,7 @@ export default function Faq() {
       console.error(error);
       setLoadingText(error.message);
     }
-  });
+  }, []);
   return (
     <div className="faqMasterContainer m-3 m-md-5 p-3 p-md-5">
       <p style={{ fontWeight: "bold" }} className="text-uppercase faqHeading">
