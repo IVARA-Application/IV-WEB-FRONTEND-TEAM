@@ -1,0 +1,14 @@
+.faqMasterContainer {
+  background-color: white;
+  border-radius: 25px;
+}
+
+.faqHeading {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .faqHeading {
+    font-size: 20px;
+  }
+}

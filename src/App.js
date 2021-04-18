@@ -8,6 +8,7 @@ import VideoDash from "./Components/HomeRoute/VideoDash";
 
 import { AuthContext } from "./HOC/LoginHOC";
 import GoogleAuthRouteCompoment from "./Components/GoogleAuthRoute";
+import FaqPage from "./pages/faqpage";
 
 function App() {
   const { auth } = useContext(AuthContext);
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route exact path="/content/video">
             <VideoDash />
+          </Route>
+          <Route exact path="/faq">
+            <FaqPage />
           </Route>
         </>
 
