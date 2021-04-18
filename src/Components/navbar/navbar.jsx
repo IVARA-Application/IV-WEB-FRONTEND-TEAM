@@ -35,9 +35,8 @@ export default function IvaraNavbar() {
             id="basic-nav-dropdown"
             style={{ fontWeight: "500", fontSize: "20px" }}
           >
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="https://www.mentorbaba.in/">
-              MntorBaba
+              MentorBaba
             </NavDropdown.Item>
             <NavDropdown.Item href="https://www.healmymind.in">
               HealMyMind

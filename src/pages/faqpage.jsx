@@ -4,7 +4,13 @@ import IvaraNavbar from "../Components/navbar/navbar";
 
 export default function FaqPage() {
   return (
-    <div style={{ backgroundColor: "#a1aaf6", minHeight: "100vh" }}>
+    <div
+      style={{
+        backgroundColor: "#a1aaf6",
+        minHeight: "100vh",
+        overflow: "auto",
+      }}
+    >
       <IvaraNavbar />
       <Faq />
     </div>
