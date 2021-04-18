@@ -1,8 +1,12 @@
-import React from "react";
-import { Navbar, Nav, Button } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import Logo from "../../img/ivaraLogo.svg";
 
 export default function IvaraNavbar() {
+  const [actionText, setActionText] = useState("Login");
+  useEffect(() => {
+    if (window.localStorage.getItem("auth") === "true") setActionText("Logout");
+  });
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Navbar.Brand href="/" style={{ fontSize: "30px" }}>
@@ -26,6 +30,19 @@ export default function IvaraNavbar() {
           >
             FAQs
           </Nav.Link>
+          <NavDropdown
+            title="Other Products"
+            id="basic-nav-dropdown"
+            style={{ fontWeight: "500", fontSize: "20px" }}
+          >
+            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <NavDropdown.Item href="https://www.mentorbaba.in/">
+              MntorBaba
+            </NavDropdown.Item>
+            <NavDropdown.Item href="https://www.healmymind.in">
+              HealMyMind
+            </NavDropdown.Item>
+          </NavDropdown>
           <Nav.Link
             href="/login"
             className="px-3"
@@ -38,7 +55,7 @@ export default function IvaraNavbar() {
               width: "fit-content",
             }}
           >
-            Login
+            {actionText}
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

@@ -1,13 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-import { faqData } from "./faqDataStore";
 import "./Faq.css";
 import { Card } from "react-bootstrap";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import axios from "axios";
 
 export default function Faq() {
   const [currentSelected, setCurrentSelected] = useState(-1);
+  const [loadingText, setLoadingText] = useState("Loading FAQs...");
   const [dataLoaded, setDataLoaded] = useState(false);
+  const [faqData, setFaqData] = useState([]);
+  useEffect(() => {
+    try {
+      axios
+        .get(
+          "https://hro2ywog4d.execute-api.ap-south-1.amazonaws.com/latest/frontend/faq"
+        )
+        .then((response) => {
+          setFaqData(response.data);
+          setDataLoaded(true);
+        });
+    } catch (error) {
+      console.error(error);
+      setLoadingText(error.message);
+    }
+  });
   return (
     <div className="faqMasterContainer m-3 m-md-5 p-3 p-md-5">
       <p style={{ fontWeight: "bold" }} className="text-uppercase faqHeading">
@@ -17,7 +34,7 @@ export default function Faq() {
         className={dataLoaded ? "d-none" : "d-block"}
         style={{ width: "100%", textAlign: "center" }}
       >
-        Loading FAQs...
+        {loadingText}
       </div>
       <div className={dataLoaded ? "d-block" : "d-none"}>
         {faqData.map((element, index) => {
