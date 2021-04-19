@@ -44,11 +44,25 @@ export default function IvaraNavbar() {
             </NavDropdown.Item>
           </NavDropdown>
           <Nav.Link
+            href="/dashboard"
+            className="px-3"
+            style={{
+              fontWeight: "500",
+              fontSize: "20px",
+              display:
+                window.localStorage.getItem("auth") === "true"
+                  ? "block"
+                  : "none",
+            }}
+          >
+            Dashboard
+          </Nav.Link>
+          <Nav.Link
             onClick={() => {
               if (window.localStorage.getItem("auth") === "true") {
                 window.localStorage.setItem("auth", "");
                 window.localStorage.setItem("token", "");
-                window.location.reload();
+                window.location.href = "/";
               } else {
                 window.location.href = "/login";
               }
