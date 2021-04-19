@@ -47,7 +47,7 @@ export default function EntranceExam() {
         <div className="row justify-content-around pt-5">
           {subjectList.map((element) => {
             return (
-              <div className="col-10 offset-1 col-md-3 offset-md-0 text-center">
+              <div className="col-10 col-md-3 offset-md-0 text-center">
                 <Card
                   className="mx-3 my-3 my-md-4"
                   style={{ backgroundColor: "#a1aaf6", cursor: "pointer" }}

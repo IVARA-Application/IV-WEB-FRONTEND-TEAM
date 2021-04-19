@@ -90,7 +90,7 @@ export default function Dashboard() {
           {skillData.map((element) => {
             return (
               <div
-                className="col-10 col-md-3 offset-md-0 px-md-3 py-3"
+                className="col-10 col-md-3 offset-md-0 px-md-3 py-3 mb-2"
                 style={{ margin: "0 !important" }}
               >
                 <Card
