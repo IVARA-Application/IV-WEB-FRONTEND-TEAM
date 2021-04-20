@@ -10,6 +10,7 @@ import GoogleAuthRouteCompoment from "./Components/GoogleAuthRoute";
 import FaqPage from "./pages/faqpage";
 import EntranceExamPage from "./pages/entranceExamPage";
 import DashboardPage from "./pages/dashboardPage";
+import LoginPage from "./pages/loginPage";
 
 function App() {
   const { auth } = useContext(AuthContext);
@@ -21,7 +22,7 @@ function App() {
             <HomeComp />
           </Route>
           <Route exact path="/login">
-            <LoginComp />
+            <LoginPage />
           </Route>
           <Route exact path="/dashboard">
             <DashboardPage />
