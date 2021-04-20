@@ -38,6 +38,7 @@ export default function Login() {
     } catch (error) {
       console.error(error);
       setInvalidCreds(true);
+      setActionText("Login");
     }
   }
   return (

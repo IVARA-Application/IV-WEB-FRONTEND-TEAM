@@ -1,4 +1,4 @@
-import skill from "../../img/skill.svg";
+import skillPage from "../../img/skillPage.svg";
 import React from "react";
 import { SkillContainer } from "../../styles";
 
@@ -18,7 +18,7 @@ const SkillDev = () => {
           </p>
         </div>
         <div className="skill-right">
-          <img className="skill" src={skill} alt="" />
+          <img className="skill" src={skillPage} alt="" />
         </div>
       </div>
     </SkillContainer>

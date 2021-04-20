@@ -11,6 +11,7 @@ import FaqPage from "./pages/faqpage";
 import EntranceExamPage from "./pages/entranceExamPage";
 import DashboardPage from "./pages/dashboardPage";
 import LoginPage from "./pages/loginPage";
+import VideoRenderPage from "./pages/videoRenderPage";
 
 function App() {
   const { auth } = useContext(AuthContext);
@@ -27,18 +28,17 @@ function App() {
           <Route exact path="/dashboard">
             <DashboardPage />
           </Route>
-          <Route exact path="/user/authcode">
-            <GoogleAuthRouteCompoment />
-          </Route>
-          <Route exact path="/content/video">
-            <VideoDash />
-          </Route>
           <Route exact path="/faq">
             <FaqPage />
           </Route>
           <Route exact path="/entranceexam">
             <EntranceExamPage />
           </Route>
+          <Route
+            exact
+            path="/video/:skill/:subject"
+            component={VideoRenderPage}
+          />
         </>
 
         <Route path="*">

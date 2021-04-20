@@ -1,0 +1,9 @@
+.videoContainer {
+  height: 90vh;
+}
+
+@media only screen and (max-width: 900px) {
+  .videoContainer {
+    height: 50vh;
+  }
+}
