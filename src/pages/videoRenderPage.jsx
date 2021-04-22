@@ -6,6 +6,7 @@ export default function VideoRenderPage(props) {
     <VideoRenderer
       skill={props.match.params.skill}
       subject={props.match.params.subject}
+      code={props.match.params.code}
     />
   );
 }

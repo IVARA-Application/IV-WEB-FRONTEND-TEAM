@@ -3,7 +3,7 @@ import axios from "axios";
 import { Card } from "react-bootstrap";
 
 export default function EntranceExam() {
-  const [dataLoaded, setDataLoaded] = useState(true);
+  const [dataLoaded, setDataLoaded] = useState(false);
   const [subjectList, setSubjectList] = useState([]);
   const [loadingText, setLoadingText] = useState("Loading subjects...");
 
@@ -19,8 +19,12 @@ export default function EntranceExam() {
             headers: {
               Authorization: `Bearer ${window.localStorage.getItem("token")}`,
             },
+            validateStatus: function (status) {
+              return status >= 200 && status < 500;
+            },
           }
         );
+        if (response.status === 403) return (window.location.href = "/login");
         setSubjectList(response.data);
         setDataLoaded(true);
       } catch (error) {
@@ -30,7 +34,7 @@ export default function EntranceExam() {
         );
       }
     }
-    fetchData();
+    !dataLoaded && fetchData();
   });
   return (
     <div
@@ -47,7 +51,12 @@ export default function EntranceExam() {
         <div className="row justify-content-around pt-5">
           {subjectList.map((element) => {
             return (
-              <div className="col-10 col-md-3 offset-md-0 text-center">
+              <div
+                className="col-10 col-md-3 offset-md-0 text-center"
+                onClick={() => {
+                  window.location.href = `/video/entranceExam/${element}/first`;
+                }}
+              >
                 <Card
                   className="mx-3 my-3 my-md-4"
                   style={{ backgroundColor: "#a1aaf6", cursor: "pointer" }}

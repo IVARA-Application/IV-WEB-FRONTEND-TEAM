@@ -36,7 +36,7 @@ function App() {
           </Route>
           <Route
             exact
-            path="/video/:skill/:subject"
+            path="/video/:skill/:subject/:code"
             component={VideoRenderPage}
           />
         </>

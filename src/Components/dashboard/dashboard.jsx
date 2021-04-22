@@ -58,8 +58,12 @@ export default function Dashboard() {
             headers: {
               Authorization: `Bearer ${window.localStorage.getItem("token")}`,
             },
+            validateStatus: function (status) {
+              return status >= 200 && status < 500;
+            },
           }
         );
+        if (response.status === 403) return (window.location.href = "/login");
         setUser(response.data);
         setDataLoaded(true);
       } catch (error) {
@@ -69,7 +73,7 @@ export default function Dashboard() {
         );
       }
     }
-    fetchData();
+    !dataLoaded && fetchData();
   });
   return (
     <div
