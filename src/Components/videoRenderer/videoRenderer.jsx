@@ -97,7 +97,6 @@ export default function VideoRenderer(props) {
               config={{ file: { attributes: { controlsList: "nodownload" } } }}
               onContextMenu={(e) => e.preventDefault()}
             />
-            <h2 className="mt-3">{videoItem.title}</h2>
           </div>
         </div>
         <div className="col-12 col-lg-2">

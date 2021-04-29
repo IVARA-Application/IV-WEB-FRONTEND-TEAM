@@ -114,7 +114,7 @@ export default function Dashboard() {
                   />
                   <Card.Body>
                     <Card.Title className="text-center">
-                      {element.name}
+                      <p style={{ height: "50px" }}>{element.name}</p>
                     </Card.Title>
                   </Card.Body>
                 </Card>
