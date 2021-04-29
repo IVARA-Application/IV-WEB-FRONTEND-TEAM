@@ -2,11 +2,7 @@ import React, { useContext } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NotFound from "./Components/NotFound";
 import HomeComp from "./Components/HomeRoute";
-import LoginComp from "./Components/LoginRoute";
-import VideoDash from "./Components/HomeRoute/VideoDash";
 
-import { AuthContext } from "./HOC/LoginHOC";
-import GoogleAuthRouteCompoment from "./Components/GoogleAuthRoute";
 import FaqPage from "./pages/faqpage";
 import EntranceExamPage from "./pages/entranceExamPage";
 import DashboardPage from "./pages/dashboardPage";
@@ -14,7 +10,6 @@ import LoginPage from "./pages/loginPage";
 import VideoRenderPage from "./pages/videoRenderPage";
 
 function App() {
-  const { auth } = useContext(AuthContext);
   return (
     <BrowserRouter>
       <Switch>

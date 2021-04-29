@@ -14,6 +14,7 @@ import Middle from "./Middle";
 import Form from "./Form";
 import { Copyright } from "./Contact";
 import Footer from "../footer/footer";
+import IvaraNavbar from "../navbar/navbar";
 
 function HomeComp({ history }) {
   return (
