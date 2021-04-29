@@ -14,30 +14,37 @@ const skillData = [
   {
     name: "Entrance Exam Courses",
     image: svg1,
+    link: "/entranceexam",
   },
   {
     name: "Study Abroad Classes",
     image: svg2,
+    link: "",
   },
   {
     name: "Skill Development Courses",
     image: svg3,
+    link: "",
   },
   {
     name: "Previous Years Papers",
     image: svg4,
+    link: "",
   },
   {
     name: "Virtual Tuition Classes",
     image: svg5,
+    link: "",
   },
   {
     name: "E-Books and E-Test Series",
     image: svg6,
+    link: "",
   },
   {
     name: "24X7 Doubts Portal",
     image: svg7,
+    link: "",
   },
 ];
 
@@ -94,7 +101,7 @@ export default function Dashboard() {
           {skillData.map((element) => {
             return (
               <div
-                className="col-10 col-md-3 offset-md-0 px-md-3 py-3 mb-2"
+                className="col-10 col-md-4 offset-md-0 px-md-3 py-3 mb-2"
                 style={{ margin: "0 !important" }}
               >
                 <Card
@@ -104,7 +111,7 @@ export default function Dashboard() {
                     cursor: "pointer",
                   }}
                   onClick={() => {
-                    window.location.href = "/entranceexam";
+                    window.location.href = element.link;
                   }}
                 >
                   <Card.Img
